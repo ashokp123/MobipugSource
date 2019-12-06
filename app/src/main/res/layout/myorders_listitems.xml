@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:layout_marginBottom="12dp">
+
+    <LinearLayout
+        android:id="@+id/orderdetailsmain_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/myodr_numbr_txt"
+                layout="@layout/customtextview" />
+            <include
+                android:id="@+id/myodr_num_txt"
+                layout="@layout/customtextview" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include
+                    android:id="@+id/myodr_bokdate_txt"
+                    layout="@layout/customtextview" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/myodr_catgrys_img"
+                layout="@layout/customimageview" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/myodr_catgrynms_txt"
+                    layout="@layout/customtextview" />
+
+                <include
+                    android:id="@+id/myodr_price_txt"
+                    layout="@layout/customtextview" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/vw_clr"/>
+
+        <LinearLayout
+            android:id="@+id/orderdetails_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <include
+            android:id="@+id/myodr_mangeodr_txt"
+            layout="@layout/customtextview" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

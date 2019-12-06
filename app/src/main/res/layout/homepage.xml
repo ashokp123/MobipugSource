@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/hm_pg_actionbar_lay"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shadowwithoutradius">
+
+                <LinearLayout
+                    android:id="@+id/hm_pg_menu_btn_lay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dp">
+
+                    <include
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:id="@+id/hm_pg_menu_btn_img"
+                        layout="@layout/customimageview"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/hm_pg_sarch_edtlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignRight="@+id/hmpg_vw"
+                    android:layout_alignLeft="@+id/hm_pg_menu_btn_lay"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_centerVertical="true">
+
+                    <include
+                        android:id="@+id/hm_pg_sarch_edtxt"
+                        layout="@layout/customedittextview"/>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/hmpg_vw"
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/vw_clr"
+                    android:layout_alignRight="@+id/hm_pg_cart_img_lay"
+                    android:layout_marginRight="47dp"></View>
+
+                <LinearLayout
+                    android:id="@+id/hm_pg_cart_img_lay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="7dp"
+                    android:padding="8dp">
+
+                    <include
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:id="@+id/hm_pg_cart_img"
+                        layout="@layout/customimageview"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+                <include
+                    android:id="@+id/hmpg_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    layout="@layout/customviewpager"/>
+
+                <LinearLayout
+                    android:id="@+id/viewPagerCountDots"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="bottom|center"
+                    android:visibility="visible"
+                    android:gravity="bottom|center"
+                    android:layout_marginBottom="0dp"></LinearLayout>
+
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <include
+                        android:id="@+id/hm_pg_ctgries_txtt"
+                        layout="@layout/customtextview"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:gravity="right">
+
+                    <include
+                        android:id="@+id/hm_pg_show_mre_txt"
+                        layout="@layout/customtextview"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center">
+
+                <include
+                    android:id="@+id/hm_pg_catgr_rvw"
+                    layout="@layout/customrecyleview"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="4dp"
+                    android:visibility="gone"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <include
+                        android:id="@+id/hm_pg_poplr_keywrds_txt"
+                        layout="@layout/customtextview"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="160dp"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                    <include
+                        android:id="@+id/hm_pg_poplr_keywrds_rvw"
+                        layout="@layout/customrecyleview"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+          </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

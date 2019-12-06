@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/products_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:id="@+id/prdctbrnd_img"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="0.2">
+
+                    <include
+                        android:id="@+id/prdctname_tx"
+                        layout="@layout/customtextview" />
+
+                    <include
+                        android:id="@+id/prdctcost_tx"
+                        layout="@layout/customtextview"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+
+                        android:orientation="horizontal">
+
+
+                        <include
+                            android:id="@+id/prdctdiscntprice_tx"
+                            layout="@layout/customtextview" />
+                        <include
+                            android:id="@+id/prdctdiscnt_tx"
+                            layout="@layout/customtextview" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+
+                        android:orientation="horizontal">
+
+                        <RatingBar
+                            android:id="@+id/pro_rating"
+                            style="@style/review_rating_bar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:isIndicator="true"
+                            android:layout_gravity="center_vertical"
+                            android:max="5"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="2dp"
+                            android:numStars="5"
+                            android:rating="5"/>
+
+
+                        <include
+                            android:id="@+id/procount_tx"
+                            layout="@layout/customtextview"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="invisible"
+                    android:layout_weight="0.8">
+
+                    <LinearLayout
+                        android:id="@+id/prdctmange_lay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ofrs_mang_bg"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <include
+                                android:id="@+id/prdctmange_img"
+                                layout="@layout/customimageview" />
+                        </LinearLayout>
+
+                        <include
+                            android:id="@+id/prdctmange_tx"
+                            layout="@layout/customtextview" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "893643073623",
+    "firebase_url": "https://mobipugapp.firebaseio.com",
+    "project_id": "mobipugapp",
+    "storage_bucket": "mobipugapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:893643073623:android:7cad5f44287e68ce",
+        "android_client_info": {
+          "package_name": "com.o3sa.mobipugapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "893643073623-dv5k2h07esuhh0c3o7efc1gpi0qu4lkq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAGbMSjXUTc4r1TIDYapQEYsc3EiVtkc4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

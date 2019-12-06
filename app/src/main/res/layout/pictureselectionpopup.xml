@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_margin="15dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue_color"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="0.4">
+
+                    <com.o3sa.mobipugapp.customfonts.RobotTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+
+                        android:text="@string/select"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="right"
+
+                    android:gravity="right"
+                    android:layout_weight="0.6">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:padding="6dp"
+                        android:id="@+id/dismiss_btn"
+                        android:tint="@color/white"
+                        android:src="@drawable/cancel_img"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/takepic_lay"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/lightgraybg">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="8dp"
+
+                    android:tint="@color/home_pg_clr1"
+                    android:src="@drawable/camera"/>
+                <com.o3sa.mobipugapp.customfonts.RobotTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:text="@string/takepic"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray3"/>
+
+            <LinearLayout
+                android:id="@+id/pickglry_lay"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/lightgraybg">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="8dp"
+
+                    android:tint="@color/home_pg_clr1"
+                    android:src="@drawable/gallery"/>
+                <com.o3sa.mobipugapp.customfonts.RobotTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:text="@string/chsefromglry"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray3"/>
+
+            <LinearLayout
+                android:id="@+id/cancel_lay"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/lightgraybg">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="13dp"
+
+                    android:tint="@color/home_pg_clr1"
+                    android:src="@drawable/cancel_img"/>
+                <com.o3sa.mobipugapp.customfonts.RobotTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:text="@string/cancel"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/ash_thik"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/mange_adofr_tx"
+            layout="@layout/customtextview"/>
+
+        <include
+            android:id="@+id/mange_ofrtype_tx"
+            layout="@layout/customtextview"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/mange_radiobutn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <include
+                android:id="@+id/mange_publc_tx"
+                layout="@layout/customtextview"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/mange_radiobutnone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <include
+                    android:id="@+id/mange_private_tx"
+                    layout="@layout/customtextview"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mange_ofrtype_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/select_ctgry_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.15"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/mange_ofrtype_edtx"
+                    layout="@layout/customtextview"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.85"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/mange_ofrtype_img"
+                    layout="@layout/customimageview"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/select_ctgry_bg">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:orientation="vertical">
+
+                        <include
+                            android:id="@+id/mange_strtdate_tx"
+                            layout="@layout/customtextview"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/strt_dte_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:background="@drawable/strt_date_bg">
+
+                        <include
+                            android:id="@+id/mange_dsplydate_tx"
+                            layout="@layout/customtextview"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                        <include
+                            android:id="@+id/mange_dsplydate_img"
+                            layout="@layout/customimageview"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/select_ctgry_bg">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:orientation="horizontal">
+
+                        <include
+                            android:id="@+id/mange_enddate_tx"
+                            layout="@layout/customtextview"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/end_dte_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:orientation="horizontal"
+                        android:background="@drawable/strt_date_bg">
+
+                        <include
+                            android:id="@+id/mange_dsplyenddate_tx"
+                            layout="@layout/customtextview"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                        <include
+                            android:id="@+id/mange_dsplyendate_img"
+                            layout="@layout/customimageview"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/mange_prmocd_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="0.5"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/select_ctgry_bg">
+
+                <include
+                    android:id="@+id/mange_prmocd_edtx"
+                    layout="@layout/customedittextview"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/mange_dscunt_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/select_ctgry_bg">
+
+                <include
+                    android:id="@+id/mange_dscunt_edtx"
+                    layout="@layout/customedittextview"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/mange_ofrdscrptn_tx"
+            layout="@layout/customtextview"/>
+
+        <include
+            android:id="@+id/mange_ofrdscrptn_edtx"
+            layout="@layout/customedittextview"/>
+
+        <include
+            android:id="@+id/mange_save_btn"
+            layout="@layout/custombutton"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

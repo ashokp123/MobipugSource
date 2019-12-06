@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/ordr_detals_bg">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_gray_clr"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+                <include
+                    android:id="@+id/odr_pp_odr_img"
+                    layout="@layout/customimageview" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="25dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="0.4">
+
+                    <include
+                        android:id="@+id/odr_pp_odr_txt"
+                        layout="@layout/customtextview" />
+
+                    <include
+                        android:id="@+id/odr_pp_odrid_txt"
+                        layout="@layout/customtextview" />
+
+                    <include
+                        android:id="@+id/odr_pp_odrdate_txt"
+                        layout="@layout/customtextview" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="right"
+
+                    android:gravity="right"
+                    android:layout_weight="0.6">
+
+                    <LinearLayout
+                        android:id="@+id/dismiss_lay"
+                        android:layout_width="30dp"
+                        android:layout_marginTop="-4dp"
+                        android:layout_height="30dp">
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:padding="8dp"
+
+                        android:id="@+id/dismiss_btn"
+                        android:src="@drawable/cancel_img"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/odr_pp_listview"
+                    layout="@layout/customrecyleview"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/odr_pp_fee_txt"
+                    layout="@layout/customtextview" />
+
+                <include
+                    android:id="@+id/odr_pp_feeprce_txt"
+                    layout="@layout/customtextview" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/odr_pp_vat_txt"
+                    layout="@layout/customtextview" />
+
+                <include
+                    android:id="@+id/odr_pp_vatprce_txt"
+                    layout="@layout/customtextview" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/gray3"/>
+
+            <include
+                android:id="@+id/odr_pp_totl_txt"
+                layout="@layout/customtextview" />
+
+            <include
+                android:id="@+id/odr_pp_totlprce_txt"
+                layout="@layout/customtextview" />
+
+    </LinearLayout>
+</LinearLayout>

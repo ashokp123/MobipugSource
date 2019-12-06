@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Framelayout to display Fragments -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/top_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <LinearLayout
+                android:id="@+id/actionbar_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include layout="@layout/customactionbar"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/middle_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/top_lay"
+            android:layout_above="@+id/btm_lay"
+            android:layout_centerInParent="true">
+
+            <FrameLayout
+                android:id="@+id/frame_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btm_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/down_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/bottom_layout"></include>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+     <ListView
+         android:id="@+id/mDrawerList"
+         android:layout_width="300dp"
+         android:layout_height="match_parent"
+         android:layout_gravity="start"
+         android:choiceMode="singleChoice"
+         android:background="@drawable/listvw_bg"
+         android:scrollbars="none"
+         android:dividerHeight="0dp"
+         android:divider="@null"
+         android:layout_marginTop="10dp"
+         android:layout_marginBottom="10dp"/>
+
+    <!--android:dividerHeight="0.3dp"
+    android:background="@color/list_clr"
+    android:divider="@color/list_dvdr_clr"-->
+
+</LinearLayout>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="10dp"
+    android:background="@color/background_color"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/top_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_above="@+id/bottom_lay"
+                android:layout_alignParentTop="true"
+                android:layout_margin="10dp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+            <include
+                android:id="@+id/cart_rv_ordr_txt"
+                android:visibility="gone"
+                layout="@layout/customtextview"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_weight="0.3">
+
+                        <include
+                            android:id="@+id/cart_rv_ordr_dte_txt"
+                            layout="@layout/customtextview"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.7">
+
+                        <include
+                            android:id="@+id/cart_rv_ordr_no_of_itms_txt"
+                            layout="@layout/customtextview"/>
+                        <include
+                            android:id="@+id/cart_rv_ordr_price_txt"
+                            layout="@layout/customtextview"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/ash"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/cart_rvw_order_rvw"
+                    layout="@layout/customrecyleview"/>
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+            <include
+                android:id="@+id/cart_rv_ordr_date_time_txt"
+                layout="@layout/customtextview"/>//12,8
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/ash"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/cart_rv_ordr_dlvry_dte_txt"
+                    layout="@layout/customtextview"/>
+
+                <LinearLayout
+                    android:id="@+id/cart_rv_ordr_dlvry_dte_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shadowwithoutradius"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.1">
+
+                    <include
+                        android:id="@+id/cart_rv_ordr_dlvry_dte_txt1"
+                        layout="@layout/customtextview"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <include
+                            android:id="@+id/cart_rv_ordr_dlvry_dte_img"
+                            layout="@layout/customimageview"/>//8,8
+
+                        <include
+                            android:id="@+id/cart_rv_ordr_dlvry_dte_img1"
+                            layout="@layout/customimageview"/>//8,8
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/cart_rv_ordr_dlvry_time_txt"
+                    layout="@layout/customtextview"/>//10,8
+
+                <LinearLayout
+                    android:id="@+id/cart_rv_ordr_dlvry_time_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shadowwithoutradius"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.1">
+
+                    <include
+                        android:id="@+id/cart_rv_ordr_dlvry_time_txt1"
+                        layout="@layout/customtextview"/>//10,8,8,10
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.9"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <include
+                            android:id="@+id/cart_rv_ordr_dlvry_time_img"
+                            layout="@layout/customimageview"/>//8,8
+
+                        <include
+                            android:id="@+id/cart_rv_ordr_dlvry_time_img1"
+                            layout="@layout/customimageview"/>//8,8
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="2dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="0.15">
+                        <include
+                            android:id="@+id/cart_rv_ordr_dlvry_addrss_txt"
+                            layout="@layout/customtextview"/>//12,15
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="right"
+                        android:layout_weight="0.85">
+                        <ImageView
+                            android:id="@+id/addmsmnt_btn"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:padding="3dp"
+                            android:src="@drawable/plus_icon"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+
+                android:layout_marginBottom="10dp"
+                android:background="@color/ash"/>
+
+            <include
+                android:id="@+id/cart_rv_ordr_dlvry_addrss_txt1"
+                android:visibility="gone"
+                layout="@layout/customtextview"/>//12,5,13
+
+            <LinearLayout
+                android:id="@+id/cart_rv_ordr_dlvry_addrss_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+                </LinearLayout>
+                </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottom_lay"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/proceed_btn"
+                layout="@layout/custombutton"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

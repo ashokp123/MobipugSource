@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/dark_grey_clr"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/ofrmn_ofrs_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.5"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include
+                        android:id="@+id/ofrmn_ofrslist_txt"
+                        layout="@layout/customtextview"/>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/ofrmn_ofrs_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/blue_color"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/vw_clr"/>
+
+            <LinearLayout
+                android:id="@+id/ofrmn_adofr_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.5"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include
+                        android:id="@+id/ofrmn_adofr_txt"
+                        layout="@layout/customtextview"/>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/ofrmn_adofr_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/white"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/vw_clr"/>
+
+            <LinearLayout
+                android:id="@+id/ofrmn_mange_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.5"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include
+                        android:id="@+id/ofrmn_mange_txt"
+                        layout="@layout/customtextview"/>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/ofrmn_mange_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/white"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/dark_grey_clr"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/inner_frame_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+</LinearLayout>

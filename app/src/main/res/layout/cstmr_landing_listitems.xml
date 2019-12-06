@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/clandng_brnd_img"
+                android:layout_width="110dp"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:layout_height="110dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include
+                        android:id="@+id/clandng_brndnme_tx"
+                        layout="@layout/customtextview" />
+
+                    <include
+                        android:id="@+id/clandng_weight_tx"
+                        layout="@layout/customtextview"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <include
+                            android:id="@+id/clandng_price_tx"
+                            layout="@layout/customtextview" />
+                        <include
+                            android:id="@+id/clandng_dscunt_tx"
+                            layout="@layout/customtextview" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <include
+                            android:id="@+id/clandng_strtdte_tx"
+                            layout="@layout/customtextview" />
+                        <include
+                            android:id="@+id/clandng_strtshwdte_tx"
+                            layout="@layout/customtextview" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <include
+                            android:id="@+id/clandng_enddte_tx"
+                            layout="@layout/customtextview" />
+                        <include
+                            android:id="@+id/clandng_endshwdte_tx"
+                            layout="@layout/customtextview" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

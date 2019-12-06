@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/barcodescan_lay"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/background_color"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:layout_weight="0.5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:textAllCaps="true"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:textColor="@color/black"
+                    android:text="SCAN\nITEM"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clickable="false"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5">
+
+                <ImageView
+                    android:id="@+id/consignment_barcode"
+                    android:layout_width="125dp"
+                    android:clickable="false"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bar_code_img"/>
+
+            </LinearLayout>
+
+          </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

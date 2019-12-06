@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/shadowwithoutradius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="0.87"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/m_myprofile"
+                        android:tint="@color/cam_txt_clt"/>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="0.1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/dark_grey_clr"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.13">
+
+                    <include
+                        android:id="@+id/vreg_busnme_edtxt"
+                        layout="@layout/customedittextview" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/shadowwithoutradius">
+
+                <LinearLayout
+                    android:id="@+id/vreg_bus_imgupld_layy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="0.87"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/vreg_bus_imgupld_imgg"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/camera"
+                        android:tint="@color/cam_txt_clt"/>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="0.1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/dark_grey_clr"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.13">
+
+                    <include
+                        android:id="@+id/vreg_bus_imgupld_edtxt"
+                        layout="@layout/customedittextview" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/shadowwithoutradius">
+
+                <LinearLayout
+                    android:id="@+id/vreg_bus_bg_imgupld_layy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="0.87"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/vreg_bus_bg_imgupld_imgg"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/camera"
+                        android:tint="@color/cam_txt_clt"/>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="0.1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/dark_grey_clr"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.13">
+
+                    <include
+                        android:id="@+id/vreg_bus_bg_imgupld_edtxt"
+                        layout="@layout/customedittextview" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vreg_slct_catgry_layy"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/shadowwithoutradius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.13">
+
+                    <include
+                        android:id="@+id/vreg_slct_catgry_edtxt"
+                        layout="@layout/customedittextview" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/dark_grey_clr"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="0.87"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/dropdown_icon"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vreg_slct_subcatgry_layy"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/shadowwithoutradius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.13">
+
+                    <include
+                        android:id="@+id/vreg_slct_subcatgry_edtxt"
+                        layout="@layout/customedittextview" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/dark_grey_clr"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="0.87"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/dropdown_icon"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <include
+                android:id="@+id/vreg_abutus_edtxt"
+                layout="@layout/custommultilineedittext"/>
+
+            <include
+                android:id="@+id/vreg_cntnue_buttn"
+                layout="@layout/custombutton"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/prdct_vw_dtls_txt"
+                    layout="@layout/customtextview"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.55">
+
+                        <RatingBar
+                            android:id="@+id/prdct_rws_rating"
+                            style="@style/review_rating_bar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:isIndicator="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="12dp"
+                            android:max="5"
+                            android:layout_marginRight="5dp"
+                            android:numStars="5"
+                            android:rating="3"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="5dp">
+
+                            <include
+                                android:id="@+id/prdct_rw_rtng_txt"
+                                layout="@layout/customtextview"/>
+
+                            <include
+                                android:id="@+id/prdct_rw_rtng_txt1"
+                                layout="@layout/customtextview"/>
+
+                            <include
+                                android:id="@+id/prdct_ovrall_rws_txt"
+                                android:visibility="gone"
+                                layout="@layout/customtextview"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="right"
+                        android:layout_weight="0.45">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="right"
+                            android:gravity="right">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <include
+                                android:id="@+id/prdct_five_star_txt"
+                                layout="@layout/customtextview"/>
+
+                            <ProgressBar
+                                android:id="@+id/prdct_five_star_rtngbar"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:progressDrawable="@drawable/customprogressbar"
+                                android:layout_width="105dp"
+                                android:layout_height="13dp"
+                                android:layout_marginEnd="4dp"
+                                android:layout_marginStart="4dp"
+                                android:progress="0" />
+
+                            <include
+                                android:id="@+id/prdct_no_of_five_star_txt"
+                                layout="@layout/customtextview"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_vertical">
+
+                            <include
+                                android:id="@+id/prdct_four_star_txt"
+                                layout="@layout/customtextview"/>
+
+                            <ProgressBar
+                                android:id="@+id/prdct_four_star_rtngbar"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:progressDrawable="@drawable/customprogressbar"
+                                android:layout_width="105dp"
+                                android:layout_height="13dp"
+                                android:layout_marginEnd="4dp"
+                                android:layout_marginStart="4dp"
+                                android:progress="0" />
+
+                            <include
+                                android:id="@+id/prdct_no_of_four_star_txt"
+                                layout="@layout/customtextview"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_vertical">
+
+                            <include
+                                android:id="@+id/prdct_three_star_txt"
+                                layout="@layout/customtextview"/>
+
+                            <ProgressBar
+                                android:id="@+id/prdct_three_star_rtngbar"
+                                style="?android:attr/progressBarStyleHorizontal"
+
+                                android:progressDrawable="@drawable/customprogressbar"
+                                android:layout_width="105dp"
+                                android:layout_height="13dp"
+                                android:layout_marginEnd="4dp"
+                                android:layout_marginStart="4dp"
+                                android:progress="0" />
+
+                            <include
+                                android:id="@+id/prdct_no_of_three_star_txt"
+                                layout="@layout/customtextview"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_vertical">
+
+                            <include
+                                android:id="@+id/prdct_two_star_txt"
+                                layout="@layout/customtextview"/>
+
+                            <ProgressBar
+                                android:id="@+id/prdct_two_star_rtngbar"
+                                style="?android:attr/progressBarStyleHorizontal"
+
+                                android:progressDrawable="@drawable/customprogressbar"
+                                android:layout_width="105dp"
+                                android:layout_height="13dp"
+                                android:layout_marginEnd="4dp"
+                                android:layout_marginStart="4dp"
+                                android:progress="0" />
+
+                            <include
+                                android:id="@+id/prdct_no_of_two_star_txt"
+                                layout="@layout/customtextview"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_vertical">
+
+                            <include
+                                android:id="@+id/prdct_one_star_txt"
+                                layout="@layout/customtextview"/>
+
+                            <ProgressBar
+                                android:id="@+id/prdct_one_star_rtngbar"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:progressDrawable="@drawable/customprogressbar"
+                                android:layout_width="105dp"
+                                android:layout_height="13dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginEnd="4dp"
+                                android:layout_marginStart="4dp"
+                                android:progress="0" />
+
+                            <include
+                                android:id="@+id/prdct_no_of_one_star_txt"
+                                layout="@layout/customtextview"/>
+
+                        </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/background_color"
+                    android:layout_marginBottom="10dp"></View>
+
+                <include
+                    android:id="@+id/prdct_wrt_rvw_nw_btn"
+                    layout="@layout/custombutton"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/background_color"
+                    android:layout_marginTop="10dp"></View>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <include
+            android:id="@+id/prdct_vw_dtls_cmnts_txt"
+            layout="@layout/customtextview"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:id="@+id/prdct_rvw_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/background_color"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/noreviews_lay"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/white">
+            <include
+                android:id="@+id/nocartitems"
+                layout="@layout/customtextview" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

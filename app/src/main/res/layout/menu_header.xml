@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/view_profile_sidemenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/hedr_top_bg">
+
+
+        <LinearLayout
+            android:id="@+id/headr_cancl_lay"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="vertical"
+            android:layout_gravity="right"
+            android:visibility="invisible"
+            android:gravity="right">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="right"
+                android:gravity="center">
+
+                <include
+                    android:id="@+id/headr_cancl_img"
+                    layout="@layout/customimageview"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/hedr_prfl_img_lay"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:orientation="vertical"
+                android:background="@drawable/hedr_profile_bg">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_gravity="bottom"
+                        android:gravity="bottom|center">
+
+                    <include
+                        android:id="@+id/headr_profile_img"
+                        layout="@layout/customimageview"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:orientation="vertical"
+                        android:layout_gravity="bottom|right"
+                        android:gravity="center"
+                        android:background="@drawable/hedr_btm_bg">
+
+                        <include
+                            android:id="@+id/hedr_prfl_ratng_txt"
+                            layout="@layout/customtextview"/>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <include
+                android:id="@+id/hedr_prfl_name_txt"
+                layout="@layout/customtextview"/>
+
+            <include
+                android:id="@+id/hedr_prfl_mail_txt"
+                layout="@layout/customtextview"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

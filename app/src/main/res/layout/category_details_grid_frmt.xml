@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:id="@+id/ctgry_griditm_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+
+                <ImageView
+                    android:id="@+id/prdetls_grd_brnd_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"/>
+
+                <TextView
+                    android:id="@+id/gridprostock_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Out of stock"
+                    android:layout_margin="2.5dp"
+                    android:textSize="9dp"
+                    android:background="@drawable/transprant_bg"
+                    android:textColor="@color/white"/>
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="3dp">
+
+            <include
+                android:id="@+id/cat_detls_grd_name_tx"
+                layout="@layout/customtextview"/>
+
+            <include
+                android:id="@+id/cat_detls_grd_cost_tx"
+                layout="@layout/customtextview"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/cat_detls_grd_discntprice_tx"
+                    layout="@layout/customtextview"/>
+
+                <include
+                    android:id="@+id/cat_detls_grd_discnt_tx"
+                    layout="@layout/customtextview"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <RatingBar
+                    android:id="@+id/cat_detls__grdrating"
+                    style="@style/review_rating_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:isIndicator="true"
+                    android:layout_gravity="center_vertical"
+                    android:max="5"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:numStars="5"
+                    android:rating="3"/>
+
+                <include
+                    android:id="@+id/cat_detls_grd_ratngcount_tx"
+                    layout="@layout/customtextview"/>
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

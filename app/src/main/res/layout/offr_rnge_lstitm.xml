@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp">
+
+        //offr_rnge_layy,offr_rnge_txtt;
+
+        <LinearLayout
+            android:id="@+id/offr_rnge_layy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/lstitm_bg"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <include
+                android:id="@+id/offr_rnge_txtt"
+                layout="@layout/customtextview"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

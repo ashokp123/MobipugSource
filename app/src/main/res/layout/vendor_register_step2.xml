@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/vreg_latitude_edtx"
+                layout="@layout/customedittextview"/>
+
+            <include
+                android:id="@+id/vreg_longitude_edtx"
+                layout="@layout/customedittextview"/>
+
+            <include
+                android:id="@+id/vreg_telephne_edtx"
+                layout="@layout/customedittextview"/>
+
+            <include
+                android:id="@+id/vreg_fax_edtx"
+                layout="@layout/customedittextview"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/shadoweffect"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.15"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/vreg_email_edtx"
+                        layout="@layout/customedittextview"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.85"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/vreg_email_img"
+                        layout="@layout/customimageview"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <include
+                android:id="@+id/vreg_bus_adres_edtx"
+                layout="@layout/customedittextview"/>
+
+            <include
+                android:id="@+id/vreg_map_adres_edtx"
+                layout="@layout/customedittextview"/>
+
+            <include
+                android:id="@+id/vreg_pincde_edtx"
+                layout="@layout/customedittextview"/>
+
+            <include
+                android:id="@+id/vreg_website_edtx"
+                layout="@layout/customedittextview"/>
+
+            <include
+                android:id="@+id/vreg_sbmt_btn"
+                layout="@layout/custombutton"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

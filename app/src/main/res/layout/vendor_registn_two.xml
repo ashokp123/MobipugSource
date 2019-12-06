@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/vreg_busnme_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.o3sa.mobipugapp.customfonts.CustomEditText
+                    android:id="@+id/vreg_busnme_edtxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="15dp"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:paddingTop="10dp"
+
+                    android:hint="@string/businessname"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark_grey_clr"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/ash_thik"/>
+
+            <LinearLayout
+                android:id="@+id/vreg_bus_imgupld_layy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/vreg_bus_imgupld_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.12">
+
+                    <com.o3sa.mobipugapp.customfonts.CustomEditText
+                        android:id="@+id/vreg_bus_imgupld_edtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:singleLine="true"
+                        android:textSize="15dp"
+                        android:enabled="false"
+                        android:paddingTop="10dp"
+                        android:hint="@string/businesspic"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/dark_grey_clr"/>
+
+                    <!-- <include
+                         android:id="@+id/vreg_pancrd_edtx"
+                         layout="@layout/customedittextview"/>-->
+
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="0.88"
+                    android:gravity="bottom|center"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/vreg_bus_imgupld_imgg"
+                        layout="@layout/customimageview"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/ash_thik"/>
+
+            <LinearLayout
+                android:id="@+id/vreg_bus_bg_imgupld_layy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/vreg_bus_bg_imgupld_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.12">
+
+                    <com.o3sa.mobipugapp.customfonts.CustomEditText
+                        android:id="@+id/vreg_bus_bg_imgupld_edtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:singleLine="true"
+                        android:paddingTop="10dp"
+                        android:textSize="15dp"
+                        android:enabled="false"
+                        android:hint="@string/businessbgpic"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/dark_grey_clr"/>
+
+                    <!-- <include
+                         android:id="@+id/vreg_pancrd_edtx"
+                         layout="@layout/customedittextview"/>-->
+
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="0.88"
+                    android:gravity="bottom|center"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/vreg_bus_bg_imgupld_imgg"
+                        layout="@layout/customimageview"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/ash_thik"/>
+
+            <LinearLayout
+                android:id="@+id/vreg_slct_catgry_layy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/vreg_slct_catgry_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.12">
+
+                    <com.o3sa.mobipugapp.customfonts.CustomEditText
+                        android:id="@+id/vreg_slct_catgry_edtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:singleLine="true"
+                        android:paddingTop="10dp"
+                        android:textSize="15dp"
+                        android:enabled="false"
+                        android:hint="@string/categorytype"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/dark_grey_clr"/>
+
+                    <!-- <include
+                         android:id="@+id/vreg_pancrd_edtx"
+                         layout="@layout/customedittextview"/>-->
+
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="0.88"
+                    android:gravity="bottom|center"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/vreg_slct_catgry_imgg"
+                        layout="@layout/customimageview"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/ash_thik"/>
+
+
+            <LinearLayout
+                android:id="@+id/vreg_slct_subcatgry_layy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/vreg_slct_subcatgry_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.12">
+
+                    <com.o3sa.mobipugapp.customfonts.CustomEditText
+                        android:id="@+id/vreg_slct_subcatgry_edtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:singleLine="true"
+                        android:paddingTop="10dp"
+                        android:textSize="15dp"
+                        android:enabled="false"
+                        android:hint="@string/secltsub_catgry"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/dark_grey_clr"/>
+
+                    <!-- <include
+                         android:id="@+id/vreg_pancrd_edtx"
+                         layout="@layout/customedittextview"/>-->
+
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="0.88"
+                    android:gravity="bottom|center"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/vreg_slct_subcatgry_imgg"
+                        layout="@layout/customimageview"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/ash_thik"/>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/vreg_abutus_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <com.o3sa.mobipugapp.customfonts.CustomEditText
+                    android:id="@+id/vreg_abutus_edtxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="left|top"
+                    android:textSize="15dp"
+                    android:background="@null"
+                    android:paddingTop="10dp"
+                    android:hint="@string/aboutus"
+                    android:lines="2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark_grey_clr"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/ash_thik"/>
+
+            <include
+                android:id="@+id/vreg_cntnue_buttn"
+                layout="@layout/custombutton"/>
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

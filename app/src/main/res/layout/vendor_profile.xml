@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue_color"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <com.o3sa.mobipugapp.uicomponents.CircularImageView
+                    android:id="@+id/vprfle_prfle_img"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/restarunt_sammpleimg"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/vprfle_nme_tx"
+                        layout="@layout/customtextview" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="right"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/vprfle_edtble_lay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/vregn_bg"
+                                android:layout_gravity="center|right"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                            <include
+                                android:id="@+id/vprfle_edtble_img"
+                                layout="@layout/customimageview"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <include
+                        android:id="@+id/vprfle_email_tx"
+                        layout="@layout/customtextview" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/ash_thik"></View>
+
+        <include
+            android:id="@+id/vprfle_bascinfo_tx"
+            layout="@layout/customtextview" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ash"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/vprfle_phnum_tx"
+                layout="@layout/customtextview" />
+
+            <include
+                android:id="@+id/vprfle_adrs_tx"
+                layout="@layout/customtextview" />
+
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/vprfle_busnesinfo_tx"
+            layout="@layout/customtextview" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ash"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/vprfle_busnme_tx"
+                layout="@layout/customtextview" />
+
+            <include
+                android:id="@+id/vprfle_busadrs_tx"
+                layout="@layout/customtextview" />
+
+            <include
+                android:id="@+id/vprfle_webste_tx"
+                layout="@layout/customtextview" />
+
+            <include
+                android:id="@+id/vprfle_fax_tx"
+                layout="@layout/customtextview" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/vprfle_acuntdetls_tx"
+            layout="@layout/customtextview" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ash"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/vprfle_acuntnme_tx"
+                layout="@layout/customtextview" />
+
+            <include
+                android:id="@+id/vprfle_acuntnumbr_tx"
+                layout="@layout/customtextview" />
+
+            <include
+                android:id="@+id/vprfle_ifsc_tx"
+                layout="@layout/customtextview" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/vndr_prfl_save_btn"
+            layout="@layout/custombutton"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

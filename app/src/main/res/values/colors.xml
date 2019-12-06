@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black">#454F63</color>
+    <color name="gray">#bebebe</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray1">#D3D7DF</color>
+    <color name="gray2">#C9CED8</color>
+    <color name="gray3">#EBEBEB</color>
+    <color name="gray4">#DEDEDE</color>
+    <color name="lightgray">#FBFBFB</color>
+    <color name="black_trnsfrnt">#00000000</color>
+
+    //app colors
+    <color name="txt_clr">#454F63</color>
+    <color name="nrml_txt_clr">#78849E</color>
+    <color name="menu_header_bg_clr">#3D81DE</color>
+    <color name="blue_color">#3598DB</color>
+  <!--  <color name="blue_color">#3497FD</color>-->
+
+    <color name="side_memu_nrml_txt_clr">#B5C1FF</color>
+    <color name="dark_grey_clr">#A5A7B0</color>
+    <color name="home_pg_clr">#858585</color>
+    <color name="home_pg_clr1">#505050</color>
+    <color name="greencolor">#a4c639</color>
+
+
+    <color name="pick_frm_clr">#888888</color>
+    <color name="cam_txt_clt">#A1A8B6</color>
+    <color name="ash_clr">#C9CDD1</color>
+    <color name="search_txt_clr">#99A0A8</color>
+    <color name="lst_itm_txt_clr">#777777</color>
+    <color name="tab_txt_clr">#959DAD</color>
+    <color name="call_taxi_btm_clr">#2A2E43</color>
+    <color name="call_taxi_btm_clr1">#353A50</color>
+    <color name="yellow_clr">#FFB900</color>
+    <color name="sport_shoos_txt_clr">#464D53</color>
+    <color name="light_blue_clr">#86DBDE</color>
+<!--
+    <color name="add_offr_txt_clr">#665EFF</color>
+-->
+    <color name="tday_txt_clr">#365F9B</color>
+    <color name="background_color">#F7F7FA</color>
+    <color name="hedr_profile_bg_clr">#AAB7CA</color>
+    <color name="vw_clr">#DDDDDD</color>
+    <color name="lctn_bg_clr">#FCFCFC</color>
+    <color name="prfl_txt_clr">#686868</color>
+    <color name="hmpg_vw_pgr_bg_clr">#D1CFC0</color>
+    <color name="light_grey_clr">#F0F1F1</color>
+    <color name="search_clr">#A1A8AF</color>
+    <color name="bggray_clr">#E8E8EA</color>
+    <color name="ctgries_clr">#53595F</color>
+    <color name="serch_nrml_clr">#989FA7</color>
+    <color name="rvw_txt_clr">#84878C</color>
+    <color name="start_date_clr">#D7D6D6</color>
+    <color name="ash_thik">#D7D6D6</color>
+
+    <color name="white_trnsfrnt">#00FFFFFF</color>
+    <color name="popup_dcsrptn_txt_clr">#575D63</color>
+
+    <color name="skyblue">#3864A6</color>
+    <color name="ash">#F4F4F6</color>
+    <color name="lyt_grey">#B4BBC9</color>
+    <color name="nrml_grey">#B6BCCB</color>
+    <color name="thik_grey">#959DAD</color>
+    <color name="thik_black">#212121</color>
+
+    <color name="ofrs_listitem_clr">#595F65</color>
+    <color name="ofrs_vwe_clr">#E4E4E4</color>
+    <color name="incrmnt_bg_clr">#CFCFCF</color>
+
+    <color name="light_ash_four">#5C5C5C</color>
+   <color name="light_ash_two">#5B5B5B</color>
+   <color name="light_ash_three">#ADADAD</color>
+
+    <color name="light_white_two">#FBFBF7</color>
+    <color name="light_ash">#EBEBD7</color>
+
+    <color name="orange">#F37C4C</color>
+    <color name="pymnt_mthd_clr">#656565</color>
+    <color name="cart_crdt_clr">#454242</color>
+    <color name="cart_sbtotl_clr">#7B7B7B</color>
+
+    <color name="light_gray_clr">#F0F0F0</color>
+    <color name="ordr_detls_bg_clr">#DBDBDD</color>
+    <color name="ordr_detls_txt_clr">#4A5157</color>
+
+    </resources>

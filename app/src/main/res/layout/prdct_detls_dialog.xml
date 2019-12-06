@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="right|center"
+                android:background="@color/background_color">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="0.25"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                <include
+                    android:id="@+id/prdct_dtls_txt"
+                    layout="@layout/customtextview"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/prdct_dtls_cncl_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="0.75"
+                    android:layout_gravity="center"
+                    android:gravity="right|center">
+
+                <include
+                    android:id="@+id/prdct_dtls_cncl_img"
+                    layout="@layout/customimageview"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/vw_clr"></View>
+
+            <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:orientation="vertical"
+               android:layout_gravity="center"
+               android:gravity="left|center"
+               android:background="@color/background_color">
+
+               <include
+                   android:id="@+id/prdct_dtls_titl_txt"
+                   layout="@layout/customtextview"/>
+
+           </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/vw_clr"></View>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_marginTop="30dp"
+               android:layout_marginLeft="20dp"
+               android:layout_marginRight="10dp">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:layout_weight="0.34">
+
+                   <include
+                       android:id="@+id/prdct_dtls_catgry_txt"
+                       layout="@layout/customtextview"/>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:layout_weight="0.48">
+
+                   <include
+                       android:id="@+id/prdct_dtls_catgry_txtt"
+                       layout="@layout/customtextview"/>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:layout_weight="0.18">
+
+                   <include
+                       android:id="@+id/prdct_dtls_catgry_txt1"
+                       layout="@layout/customtextview"/>
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_marginTop="10dp">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_weight="0.34">
+
+                       <include
+                           android:id="@+id/prdct_dtls_sub_catgry_txt"
+                           layout="@layout/customtextview"/>
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_weight="0.48">
+
+                       <include
+                           android:id="@+id/prdct_dtls_sub_catgry_txtt"
+                           layout="@layout/customtextview"/>
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_weight="0.18">
+
+                       <include
+                           android:id="@+id/prdct_dtls_sub_catgry_txt1"
+                           layout="@layout/customtextview"/>
+
+                   </LinearLayout>
+
+
+               </LinearLayout>
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_marginTop="10dp">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_weight="0.34">
+
+                       <include
+                           android:id="@+id/prdct_dtls_price_txt"
+                           layout="@layout/customtextview"/>
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_weight="0.48">
+
+                       <include
+                           android:id="@+id/prdct_dtls_price_txtt"
+                           layout="@layout/customtextview"/>
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_weight="0.18">
+
+                       <include
+                           android:id="@+id/prdct_dtls_price_txt1"
+                           layout="@layout/customtextview"/>
+
+                   </LinearLayout>
+
+               </LinearLayout>
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_marginTop="10dp">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_weight="0.34">
+
+                       <include
+                           android:id="@+id/prdct_dtls_dscnt_txt"
+                           layout="@layout/customtextview"/>
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_weight="0.48">
+
+                       <include
+                           android:id="@+id/prdct_dtls_dscnt_txtt"
+                           layout="@layout/customtextview"/>
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_weight="0.18">
+
+                       <include
+                           android:id="@+id/prdct_dtls_dscnt_txt1"
+                           layout="@layout/customtextview"/>
+
+                   </LinearLayout>
+
+
+               </LinearLayout>
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_marginTop="25dp"
+                   android:layout_marginBottom="20dp">
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_gravity="center"
+                       android:gravity="center">
+
+                       <RatingBar
+                           android:id="@+id/prdct_dtls_rating_bar"
+                           style="@style/review_rating_bar"
+                           android:layout_width="wrap_content"
+                           android:layout_height="25dp"
+                           android:isIndicator="true"
+                           android:layout_gravity="center_vertical"
+                           android:layout_marginLeft="15dp"
+                           android:max="5"
+                           android:numStars="5"
+                           android:rating="3"/>
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_marginLeft="12dp">
+
+                       <include
+                           android:id="@+id/prdct_dtls_rating_txt"
+                           layout="@layout/customtextview"/>
+
+                   </LinearLayout>
+
+
+               </LinearLayout>
+
+
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

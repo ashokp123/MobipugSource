@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "E:\\SandeepProjectResources\\MobipugNew\\Mobipug27.10.18\\MobipugSource\\zBarScannerLibraryy\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 49,
+                    "endOffset": 100
+                },
+                "from": {
+                    "file": "E:\\SandeepProjectResources\\MobipugNew\\Mobipug27.10.18\\MobipugSource\\zBarScannerLibraryy\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 49,
+                        "endOffset": 100
+                    }
+                }
+            }
+        ]
+    }
+]

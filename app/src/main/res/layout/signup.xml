@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp">
+
+            <RadioButton
+                android:id="@+id/regcustmr_radbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <include
+                android:id="@+id/regcustmr_txt"
+                layout="@layout/customtextview"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/regvendor_radbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <include
+                    android:id="@+id/regvendor_txt"
+                    layout="@layout/customtextview"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/regcustomer_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp">
+
+            <include
+                android:id="@+id/cname_txt"
+                layout="@layout/customedittextview" />
+
+            <include
+                android:id="@+id/cmobile_txt"
+                layout="@layout/customedittextview" />
+            <include
+                android:id="@+id/cemail_txt"
+                layout="@layout/customedittextview" />
+
+            <include
+                android:id="@+id/cpasswrd_txt"
+                layout="@layout/customedittextview" />
+            <include
+                android:id="@+id/confrmpasswrd_txt"
+                layout="@layout/customedittextview" />
+
+            <include
+                android:id="@+id/cregister_btn"
+                layout="@layout/custombutton"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

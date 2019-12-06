@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/hm_pg_actionbar_lay"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/shadowwithoutradius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="0.44"
+                    android:layout_marginLeft="10dp">
+
+                    <include
+                        android:id="@+id/ofrs_menu_img"
+                        layout="@layout/customimageview"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.23">
+
+                    <include
+                        android:id="@+id/ofrs_srch_tx"
+                        layout="@layout/customedittextview"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/prdct_lst_fltr_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="0.33"
+                    android:gravity="right"
+                    android:layout_marginRight="5dp"
+                    android:padding="8dp">
+
+                    <include
+                        android:id="@+id/ofrs_filtr_img"
+                        layout="@layout/customimageview"/>
+
+                    <include
+                        android:id="@+id/ofrs_filtrs_tx"
+                        layout="@layout/customtextview"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/ofrs_recycleviwe"
+                layout="@layout/customrecyleview"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

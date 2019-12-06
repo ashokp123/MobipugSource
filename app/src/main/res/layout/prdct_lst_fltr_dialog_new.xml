@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_marginRight="126dp"
+            android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/fltr_uparow_img"
+                    android:layout_width="40dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/pink_uparrow"
+                    android:tint="@color/background_color"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="-8dp"
+            android:background="@drawable/fltr_dialog_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/filtr_cncl_img_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="0.5">
+
+                <include
+                    android:id="@+id/filtr_cncl_img"
+                    layout="@layout/customimageview"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/filtr_reset_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:layout_weight="0.5">
+
+                <include
+                    android:id="@+id/filtr_reset_txt"
+                    layout="@layout/customtextview"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical">
+
+                     <android.support.design.widget.AppBarLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="32dp"
+                         android:background="@color/white">
+
+                         <!--android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+
+                         <android.support.v7.widget.Toolbar
+                             android:id="@+id/toolbar"
+                             android:layout_width="match_parent"
+                             android:layout_height="0dp"
+                             android:background="@color/white"
+                             app:layout_scrollFlags="scroll|enterAlways"
+                             app:popupTheme="@style/ThemeOverlay.AppCompat"/>
+
+                         <android.support.design.widget.TabLayout
+                             android:id="@+id/tabs"
+                             android:layout_width="match_parent"
+                             android:layout_height="32dp"
+                             app:tabMode="scrollable"
+                             app:tabGravity="fill"
+                             app:tabSelectedTextColor="@color/sport_shoos_txt_clr"
+                             style="@style/MyTabLayout"/>
+
+                     </android.support.design.widget.AppBarLayout>
+
+                     <!--android:layout_centerInParent="true"-->
+
+                     <android.support.v4.view.ViewPager
+                         android:id="@+id/viewpager_filter"
+                         android:layout_width="match_parent"
+                         android:layout_height="150dp"
+                         app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+                 </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:background="@color/white"
+                        android:layout_marginTop="32dp"></View>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/light_grey_clr"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"></View>
+
+            <include
+                android:id="@+id/fltr_done_btn"
+                layout="@layout/custombutton"/>
+
+        </LinearLayout>
+            </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>

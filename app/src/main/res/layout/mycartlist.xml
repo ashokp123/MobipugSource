@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/nocartlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background_color"
+        android:visibility="gone"
+        android:gravity="center"
+        >
+    <include
+        android:id="@+id/nocartitems"
+        layout="@layout/customtextview" />
+    </LinearLayout>
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+       >
+
+
+        <LinearLayout
+            android:id="@+id/top_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:layout_above="@+id/bottom_lay"
+            android:background="@color/background_color"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            <LinearLayout
+                android:id="@+id/my_cart_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+            </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/bottom_lay"
+            android:layout_alignParentBottom="true">
+            <include
+
+                android:id="@+id/cartproceed_btn"
+                layout="@layout/custombutton"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

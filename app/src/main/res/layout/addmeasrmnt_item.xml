@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1">
+            <EditText
+                android:id="@+id/mesrmntname_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.23"
+                android:hint="@string/length"
+                android:textSize="12dp"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:drawableRight="@drawable/down_arrow"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/shadoweffect"/>
+
+            <EditText
+                android:id="@+id/mesrmntval_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.23"
+                android:layout_marginLeft="1.5dp"
+                android:hint="@string/enterval"
+                android:textSize="12dp"
+                android:layout_marginRight="1.5dp"
+                android:background="@drawable/shadoweffect"/>
+
+            <EditText
+                android:id="@+id/mesrmntunit_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.23"
+                android:hint="@string/inches"
+                android:textSize="12dp"
+                android:drawableRight="@drawable/down_arrow"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:editable="false"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/shadoweffect"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="right"
+
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.31">
+                <ImageView
+                    android:id="@+id/addmoremsmnt_btn"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:padding="4dp"
+                    android:layout_gravity="center_vertical"
+                    android:tint="@color/blue_color"
+                    android:src="@drawable/plus_img"/>
+                <ImageView
+                    android:id="@+id/removemoremsmnt_btn"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:padding="4dp"
+                    android:visibility="gone"
+                    android:layout_gravity="center_vertical"
+                    android:tint="@color/blue_color"
+                    android:src="@drawable/deleteimage"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

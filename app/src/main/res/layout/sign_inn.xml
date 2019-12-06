@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/logincustmr_radbtnn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <include
+                android:id="@+id/logincustmr_txtt"
+                layout="@layout/customtextview"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/loginvendor_radbtnn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <include
+                    android:id="@+id/loginvendor_txtt"
+                    layout="@layout/customtextview"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/sgin_emal_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <com.o3sa.mobipugapp.customfonts.CustomEditText
+                    android:id="@+id/sgin_emal_edtxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:paddingTop="10dp"
+                    android:textSize="14dp"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:hint="@string/email"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/ash_clr"/>
+
+
+            <!--<include
+                android:id="@+id/sgin_emal_edtxt"
+                layout="@layout/customedittextview" />-->
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/start_date_clr"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/sgin_pswd_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <com.o3sa.mobipugapp.customfonts.CustomEditText
+                    android:id="@+id/sgin_pswd_edtxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textSize="14dp"
+                    android:background="@null"
+                    android:hint="@string/paswrd"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/ash_clr"/>
+
+
+               <!-- <include
+                    android:id="@+id/sgin_pswd_edtxt"
+                    layout="@layout/customedittextview" />-->
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/start_date_clr"/>
+
+
+            <include
+                android:id="@+id/sgin_frgtpswd_txtt"
+                layout="@layout/customtextview"/>
+
+            <include
+                android:id="@+id/sgin_ctnue_btnn"
+                layout="@layout/custombutton"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

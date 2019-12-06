@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+ <LinearLayout
+     android:id="@+id/down_lay"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical">
+
+     <View
+         android:layout_width="match_parent"
+         android:layout_height="0.5dp"
+         android:background="@color/vw_clr"></View>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:orientation="horizontal">
+
+         <LinearLayout
+             android:id="@+id/btm_home_lay"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_weight="0.2"
+             android:background="@color/white"
+             android:clickable="true"
+             android:gravity="center"
+             android:orientation="vertical">
+
+             <!--android:background="@drawable/ripple_effect"-->
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:gravity="center"
+                 android:layout_gravity="center">
+
+                 <include
+                     android:id="@+id/btm_home_img"
+                     layout="@layout/customimageview"/>//25,25
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:gravity="center"
+                 android:layout_gravity="center">
+
+                 <include
+                     android:id="@+id/btm_home_txt"
+                     layout="@layout/customtextview"/>//10
+
+             </LinearLayout>
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/btm_gnrt_bill_lay"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_weight="0.2"
+             android:background="@color/white"
+             android:clickable="true"
+             android:gravity="center"
+             android:orientation="vertical">
+
+             <!--android:background="@drawable/ripple_effect"-->
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:gravity="center"
+                 android:layout_gravity="center">
+
+                 <include
+                     android:id="@+id/btm_gnrt_bill_img"
+                     layout="@layout/customimageview"/>//25,25
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:gravity="center"
+                 android:layout_gravity="center">
+
+                 <include
+                     android:id="@+id/btm_gnrt_bill_txt"
+                     layout="@layout/customtextview"/>//10
+
+             </LinearLayout>
+
+         </LinearLayout>
+
+
+         <LinearLayout
+             android:id="@+id/btm_ctgry_lay"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_weight="0.2"
+             android:background="@color/white"
+             android:clickable="true"
+             android:gravity="center"
+             android:orientation="vertical">
+
+             <!--android:background="@drawable/btm_cntr_bg"-->
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:gravity="center"
+                 android:layout_gravity="center">
+
+                 <include
+                     android:id="@+id/btm_ctgry_img"
+                     layout="@layout/customimageview"/>//25,25
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:gravity="center"
+                 android:layout_gravity="center">
+
+                 <include
+                     android:id="@+id/btm_ctgry_txt"
+                     layout="@layout/customtextview"/>//10
+
+             </LinearLayout>
+
+         </LinearLayout>
+
+
+         <LinearLayout
+             android:id="@+id/btm_sub_ctgry_lay"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_weight="0.2"
+             android:background="@color/white"
+             android:clickable="true"
+             android:gravity="center"
+             android:orientation="vertical">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:gravity="center"
+                 android:layout_gravity="center">
+
+                 <include
+                     android:id="@+id/btm_sub_ctgry_img"
+                     layout="@layout/customimageview"/>//25,25
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:gravity="center"
+                 android:layout_gravity="center">
+
+                 <include
+                     android:id="@+id/btm_sub_ctgry_txt"
+                     layout="@layout/customtextview"/>//10
+
+             </LinearLayout>
+
+         </LinearLayout>
+
+
+         <LinearLayout
+             android:id="@+id/btm_settings_lay"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_weight="0.2"
+             android:background="@color/white"
+             android:clickable="true"
+             android:gravity="bottom"
+             android:orientation="vertical">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:gravity="center"
+                 android:layout_gravity="center">
+
+                 <include
+                     android:id="@+id/btm_settings_img"
+                     layout="@layout/customimageview"/>//25,25
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:gravity="center"
+                 android:layout_gravity="center">
+
+                 <include
+                     android:id="@+id/btm_settings_txt"
+                     layout="@layout/customtextview"/>//10
+
+             </LinearLayout>
+
+         </LinearLayout>
+
+     </LinearLayout>
+
+      </LinearLayout>
+
+</LinearLayout>

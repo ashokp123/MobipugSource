@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bggray_clr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="7dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/shadowwithoutradius"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.44"
+                        android:layout_marginLeft="10dp">
+
+                        <include
+                            android:id="@+id/cat_detls_menu_img"
+                            layout="@layout/customimageview"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.23">
+
+                        <include
+                            android:id="@+id/cat_detls_srch_edtx"
+                            layout="@layout/customedittextview"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="0.33"
+                        android:gravity="right"
+                        android:id="@+id/pro_filterlay"
+                        android:layout_marginRight="5dp"
+                        android:padding="8dp">
+
+                        <include
+                            android:id="@+id/cat_detls_filtr_img"
+                            layout="@layout/customimageview"/>
+
+                        <include
+                            android:id="@+id/cat_detls_filtrs_tx"
+                            layout="@layout/customtextview"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/vw_clr"/>
+
+                <LinearLayout
+                    android:id="@+id/cat_detls_chngelay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="0.8">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <include
+                            android:id="@+id/cat_detls_chngelay_img"
+
+                            layout="@layout/customimageview"/>
+
+                        <include
+                            android:id="@+id/cat_detls_chngegrid_img"
+                            layout="@layout/customimageview"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/cat_detls_recycleviwe"
+                layout="@layout/customrecyleview"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+            <include
+                android:id="@+id/cat_detls_grd_lstvwe"
+                layout="@layout/customrecyleview"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

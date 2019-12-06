@@ -1,0 +1,330 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x527ffa77, pid=6140, tid=0x00000224
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_101-b13) (build 1.8.0_101-b13)
+# Java VM: Java HotSpot(TM) Client VM (25.101-b13 mixed mode windows-x86 )
+# Problematic frame:
+# V  [jvm.dll+0xbfa77]
+#
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x4448a800):  VMThread [stack: 0x44690000,0x446e0000] [id=548]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x00000060
+
+Registers:
+EAX=0x0000000e, EBX=0x1a3193ac, ECX=0x00000006, EDX=0x00000000
+ESP=0x446dece8, EBP=0x446ded08, ESI=0x1a3193b0, EDI=0x1a321a18
+EIP=0x527ffa77, EFLAGS=0x00010202
+
+Top of Stack: (sp=0x446dece8)
+0x446dece8:   52aa94cc 44657c9c 44657c98 442fc420
+0x446decf8:   1a3193b0 00000003 194f4ec8 442fc418
+0x446ded08:   446ded28 528f4db1 1a3193a0 52aa94cc
+0x446ded18:   44657c98 44657c9c 52aa94cc 44657c98
+0x446ded28:   446ded34 528f4fac 00000003 446ded50
+0x446ded38:   5289883a 44657c98 44655000 52aa94cc
+0x446ded48:   00000000 44659868 446def38 528b9eef
+0x446ded58:   52aa94cc 00000001 44655000 00000000 
+
+Instructions: (pc=0x527ffa77)
+0x527ffa57:   80 3d b4 84 a9 52 00 75 0a 8b d0 80 e2 07 80 fa
+0x527ffa67:   01 eb 1b 8b c8 83 e1 07 83 f9 05 74 24 8b 57 04
+0x527ffa77:   8b 52 60 83 e2 07 80 fa 05 74 0c 83 f9 01 75 07
+0x527ffa87:   a9 80 ff ff ff 74 0a 50 57 e8 fb 4f 0f 00 83 c4 
+
+
+Register to memory mapping:
+
+EAX=0x0000000e is an unknown value
+EBX=0x1a3193ac is pointing into object: 0x1a3193a0
+com.android.dx.rop.code.RegisterSpecList 
+ - klass: 'com/android/dx/rop/code/RegisterSpecList'
+ECX=0x00000006 is an unknown value
+EDX=0x00000000 is an unknown value
+ESP=0x446dece8 is an unknown value
+EBP=0x446ded08 is an unknown value
+ESI=0x1a3193b0 is an oop
+com.android.dx.rop.code.SourcePosition 
+ - klass: 'com/android/dx/rop/code/SourcePosition'
+EDI=0x1a321a18 is pointing into object: 0x1a321a10
+[Lcom.android.dx.rop.code.RegisterSpec; 
+ - klass: 'com/android/dx/rop/code/RegisterSpec'[]
+ - length: 3
+
+
+Stack: [0x44690000,0x446e0000],  sp=0x446dece8,  free space=315k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0xbfa77]
+V  [jvm.dll+0x1b4db1]
+V  [jvm.dll+0x1b4fac]
+V  [jvm.dll+0x15883a]
+V  [jvm.dll+0x179eef]
+V  [jvm.dll+0x1789ea]
+V  [jvm.dll+0x97fb0]
+V  [jvm.dll+0x992a1]
+V  [jvm.dll+0x9b020]
+V  [jvm.dll+0x9b489]
+V  [jvm.dll+0x9a27f]
+V  [jvm.dll+0xa64b2]
+V  [jvm.dll+0x98e73]
+V  [jvm.dll+0x92e25]
+V  [jvm.dll+0x1b81c6]
+V  [jvm.dll+0x18292b]
+V  [jvm.dll+0x181d31]
+V  [jvm.dll+0x182147]
+V  [jvm.dll+0x182342]
+V  [jvm.dll+0x1c1ed6]
+C  [msvcr100.dll+0x5c556]
+C  [msvcr100.dll+0x5c600]
+C  [kernel32.dll+0x51174]
+C  [ntdll.dll+0x5b3f5]
+C  [ntdll.dll+0x5b3c8]
+
+VM_Operation (0x003ce7e8): GenCollectForAllocation, mode: safepoint, requested by thread 0x0065bc00
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x44655000 JavaThread "pool-2-thread-4" [_thread_blocked, id=3588, stack(0x03c60000,0x03cb0000)]
+  0x44654400 JavaThread "pool-2-thread-3" [_thread_blocked, id=2468, stack(0x44c30000,0x44c80000)]
+  0x44658400 JavaThread "pool-2-thread-2" [_thread_blocked, id=6056, stack(0x44af0000,0x44b40000)]
+  0x4462f400 JavaThread "pool-3-thread-1" [_thread_blocked, id=3240, stack(0x44b90000,0x44be0000)]
+  0x44631800 JavaThread "pool-2-thread-1" [_thread_blocked, id=6064, stack(0x44930000,0x44980000)]
+  0x444ecc00 JavaThread "Service Thread" daemon [_thread_blocked, id=4556, stack(0x018d0000,0x01920000)]
+  0x444da000 JavaThread "C1 CompilerThread0" daemon [_thread_blocked, id=3132, stack(0x449b0000,0x44a00000)]
+  0x444d9000 JavaThread "Attach Listener" daemon [_thread_blocked, id=1136, stack(0x447e0000,0x44830000)]
+  0x444d6000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=5272, stack(0x44840000,0x44890000)]
+  0x444b6c00 JavaThread "Finalizer" daemon [_thread_blocked, id=3736, stack(0x03cf0000,0x03d40000)]
+  0x44490400 JavaThread "Reference Handler" daemon [_thread_blocked, id=4192, stack(0x03da0000,0x03df0000)]
+  0x0065bc00 JavaThread "main" [_thread_blocked, id=5076, stack(0x00380000,0x003d0000)]
+
+Other Threads:
+=>0x4448a800 VMThread [stack: 0x44690000,0x446e0000] [id=548]
+  0x444d0000 WatcherThread [stack: 0x44a90000,0x44ae0000] [id=5704]
+
+VM state:at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x0065a230] Threads_lock - owner thread: 0x4448a800
+[0x0065a640] Heap_lock - owner thread: 0x0065bc00
+
+Heap:
+ def new generation   total 14336K, used 1536K [0x03e00000, 0x04d80000, 0x19350000)
+  eden space 12800K,   0% used [0x03e00000, 0x03e00000, 0x04a80000)
+  from space 1536K, 100% used [0x04c00000, 0x04d80000, 0x04d80000)
+  to   space 1536K,   0% used [0x04a80000, 0x04a80000, 0x04c00000)
+ tenured generation   total 31912K, used 31867K [0x19350000, 0x1b27a000, 0x43e00000)
+   the space 31912K,  99% used [0x19350000, 0x1b26edf8, 0x1b26ee00, 0x1b27a000)
+ Metaspace       used 3520K, capacity 3526K, committed 3648K, reserved 4480K
+
+Card table byte_map: [0x43e00000,0x44010000] byte_map_base: 0x43de1000
+
+Polling page: 0x003d0000
+
+CodeCache: size=32768Kb used=2861Kb max_used=2861Kb free=29906Kb
+ bounds [0x01c60000, 0x01f30000, 0x03c60000]
+ total_blobs=1406 nmethods=1261 adapters=75
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 1.208 Thread 0x444da000 1259             com.android.dx.rop.type.Type::<init> (84 bytes)
+Event: 1.208 Thread 0x444da000 nmethod 1259 0x01f283c8 code [0x01f284f0, 0x01f28724]
+Event: 1.231 Thread 0x444da000 1260             com.android.dx.dex.code.SimpleInsn::<init> (8 bytes)
+Event: 1.232 Thread 0x444da000 nmethod 1260 0x01f28848 code [0x01f28940, 0x01f289dc]
+Event: 1.233 Thread 0x444da000 1261             com.android.dx.cf.attrib.RawAttribute::byteLength (11 bytes)
+Event: 1.233 Thread 0x444da000 nmethod 1261 0x01f28a48 code [0x01f28b40, 0x01f28bd0]
+Event: 1.236 Thread 0x444da000 1262             com.android.dx.dex.cf.AttributeTranslator::translateInnerClasses (356 bytes)
+Event: 1.239 Thread 0x444da000 nmethod 1262 0x01f28c48 code [0x01f28f90, 0x01f29da8]
+Event: 1.240 Thread 0x444da000 1263             com.android.dx.rop.type.StdTypeList::equalContents (56 bytes)
+Event: 1.241 Thread 0x444da000 nmethod 1263 0x01f2b488 code [0x01f2b5d0, 0x01f2b79c]
+
+GC Heap History (10 events):
+Event: 1.082 GC heap after
+Heap after GC invocations=51 (full 2):
+ def new generation   total 14336K, used 1535K [0x03e00000, 0x04d80000, 0x19350000)
+  eden space 12800K,   0% used [0x03e00000, 0x03e00000, 0x04a80000)
+  from space 1536K,  99% used [0x04a80000, 0x04bffff8, 0x04c00000)
+  to   space 1536K,   0% used [0x04c00000, 0x04c00000, 0x04d80000)
+ tenured generation   total 31656K, used 21683K [0x19350000, 0x1b23a000, 0x43e00000)
+   the space 31656K,  68% used [0x19350000, 0x1a87cc58, 0x1a87ce00, 0x1b23a000)
+ Metaspace       used 3520K, capacity 3526K, committed 3648K, reserved 4480K
+}
+Event: 1.109 GC heap before
+{Heap before GC invocations=51 (full 2):
+ def new generation   total 14336K, used 14335K [0x03e00000, 0x04d80000, 0x19350000)
+  eden space 12800K, 100% used [0x03e00000, 0x04a80000, 0x04a80000)
+  from space 1536K,  99% used [0x04a80000, 0x04bffff8, 0x04c00000)
+  to   space 1536K,   0% used [0x04c00000, 0x04c00000, 0x04d80000)
+ tenured generation   total 31656K, used 21683K [0x19350000, 0x1b23a000, 0x43e00000)
+   the space 31656K,  68% used [0x19350000, 0x1a87cc58, 0x1a87ce00, 0x1b23a000)
+ Metaspace       used 3520K, capacity 3526K, committed 3648K, reserved 4480K
+Event: 1.117 GC heap after
+Heap after GC invocations=52 (full 2):
+ def new generation   total 14336K, used 1536K [0x03e00000, 0x04d80000, 0x19350000)
+  eden space 12800K,   0% used [0x03e00000, 0x03e00000, 0x04a80000)
+  from space 1536K, 100% used [0x04c00000, 0x04d80000, 0x04d80000)
+  to   space 1536K,   0% used [0x04a80000, 0x04a80000, 0x04c00000)
+ tenured generation   total 31656K, used 23538K [0x19350000, 0x1b23a000, 0x43e00000)
+   the space 31656K,  74% used [0x19350000, 0x1aa4cb08, 0x1aa4cc00, 0x1b23a000)
+ Metaspace       used 3520K, capacity 3526K, committed 3648K, reserved 4480K
+}
+Event: 1.151 GC heap before
+{Heap before GC invocations=52 (full 2):
+ def new generation   total 14336K, used 14336K [0x03e00000, 0x04d80000, 0x19350000)
+  eden space 12800K, 100% used [0x03e00000, 0x04a80000, 0x04a80000)
+  from space 1536K, 100% used [0x04c00000, 0x04d80000, 0x04d80000)
+  to   space 1536K,   0% used [0x04a80000, 0x04a80000, 0x04c00000)
+ tenured generation   total 31656K, used 23538K [0x19350000, 0x1b23a000, 0x43e00000)
+   the space 31656K,  74% used [0x19350000, 0x1aa4cb08, 0x1aa4cc00, 0x1b23a000)
+ Metaspace       used 3520K, capacity 3526K, committed 3648K, reserved 4480K
+Event: 1.160 GC heap after
+Heap after GC invocations=53 (full 2):
+ def new generation   total 14336K, used 1535K [0x03e00000, 0x04d80000, 0x19350000)
+  eden space 12800K,   0% used [0x03e00000, 0x03e00000, 0x04a80000)
+  from space 1536K,  99% used [0x04a80000, 0x04bffff8, 0x04c00000)
+  to   space 1536K,   0% used [0x04c00000, 0x04c00000, 0x04d80000)
+ tenured generation   total 31656K, used 25530K [0x19350000, 0x1b23a000, 0x43e00000)
+   the space 31656K,  80% used [0x19350000, 0x1ac3e8d0, 0x1ac3ea00, 0x1b23a000)
+ Metaspace       used 3520K, capacity 3526K, committed 3648K, reserved 4480K
+}
+Event: 1.185 GC heap before
+{Heap before GC invocations=53 (full 2):
+ def new generation   total 14336K, used 14335K [0x03e00000, 0x04d80000, 0x19350000)
+  eden space 12800K, 100% used [0x03e00000, 0x04a80000, 0x04a80000)
+  from space 1536K,  99% used [0x04a80000, 0x04bffff8, 0x04c00000)
+  to   space 1536K,   0% used [0x04c00000, 0x04c00000, 0x04d80000)
+ tenured generation   total 31656K, used 25530K [0x19350000, 0x1b23a000, 0x43e00000)
+   the space 31656K,  80% used [0x19350000, 0x1ac3e8d0, 0x1ac3ea00, 0x1b23a000)
+ Metaspace       used 3520K, capacity 3526K, committed 3648K, reserved 4480K
+Event: 1.195 GC heap after
+Heap after GC invocations=54 (full 2):
+ def new generation   total 14336K, used 1536K [0x03e00000, 0x04d80000, 0x19350000)
+  eden space 12800K,   0% used [0x03e00000, 0x03e00000, 0x04a80000)
+  from space 1536K, 100% used [0x04c00000, 0x04d80000, 0x04d80000)
+  to   space 1536K,   0% used [0x04a80000, 0x04a80000, 0x04c00000)
+ tenured generation   total 31656K, used 27771K [0x19350000, 0x1b23a000, 0x43e00000)
+   the space 31656K,  87% used [0x19350000, 0x1ae6eef8, 0x1ae6f000, 0x1b23a000)
+ Metaspace       used 3520K, capacity 3526K, committed 3648K, reserved 4480K
+}
+Event: 1.216 GC heap before
+{Heap before GC invocations=54 (full 2):
+ def new generation   total 14336K, used 14336K [0x03e00000, 0x04d80000, 0x19350000)
+  eden space 12800K, 100% used [0x03e00000, 0x04a80000, 0x04a80000)
+  from space 1536K, 100% used [0x04c00000, 0x04d80000, 0x04d80000)
+  to   space 1536K,   0% used [0x04a80000, 0x04a80000, 0x04c00000)
+ tenured generation   total 31656K, used 27771K [0x19350000, 0x1b23a000, 0x43e00000)
+   the space 31656K,  87% used [0x19350000, 0x1ae6eef8, 0x1ae6f000, 0x1b23a000)
+ Metaspace       used 3520K, capacity 3526K, committed 3648K, reserved 4480K
+Event: 1.225 GC heap after
+Heap after GC invocations=55 (full 2):
+ def new generation   total 14336K, used 1535K [0x03e00000, 0x04d80000, 0x19350000)
+  eden space 12800K,   0% used [0x03e00000, 0x03e00000, 0x04a80000)
+  from space 1536K,  99% used [0x04a80000, 0x04bffff8, 0x04c00000)
+  to   space 1536K,   0% used [0x04c00000, 0x04c00000, 0x04d80000)
+ tenured generation   total 31656K, used 29532K [0x19350000, 0x1b23a000, 0x43e00000)
+   the space 31656K,  93% used [0x19350000, 0x1b0272f8, 0x1b027400, 0x1b23a000)
+ Metaspace       used 3520K, capacity 3526K, committed 3648K, reserved 4480K
+}
+Event: 1.249 GC heap before
+{Heap before GC invocations=55 (full 2):
+ def new generation   total 14336K, used 14335K [0x03e00000, 0x04d80000, 0x19350000)
+  eden space 12800K, 100% used [0x03e00000, 0x04a80000, 0x04a80000)
+  from space 1536K,  99% used [0x04a80000, 0x04bffff8, 0x04c00000)
+  to   space 1536K,   0% used [0x04c00000, 0x04c00000, 0x04d80000)
+ tenured generation   total 31656K, used 29532K [0x19350000, 0x1b23a000, 0x43e00000)
+   the space 31656K,  93% used [0x19350000, 0x1b0272f8, 0x1b027400, 0x1b23a000)
+ Metaspace       used 3520K, capacity 3526K, committed 3648K, reserved 4480K
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (5 events):
+Event: 0.035 Thread 0x0065bc00 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.defineClass(Ljava/lang/String;[BII)Ljava/lang/Class; name or signature does not match> (0x03e06ea8) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u101\7261\hotspot\src\share\aÀ±S¢?
+Event: 0.035 Thread 0x0065bc00 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.prefetchRead(Ljava/lang/Object;J)V name or signature does not match> (0x03e07178) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u101\7261\hotspot\src\share\vm\prims\jni.cpp, {š÷×p8í?
+Event: 0.913 Thread 0x44631800 Exception <a 'java/lang/ArrayIndexOutOfBoundsException': 18> (0x03f9cb58) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u101\7261\hotspot\src\share\vm\interpreter\interpreterRuntime.cpp, line 366]
+Event: 0.913 Thread 0x44631800 Exception <a 'java/lang/ArrayIndexOutOfBoundsException': 145> (0x03f9e3f8) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u101\7261\hotspot\src\share\vm\interpreter\interpreterRuntime.cpp, line 366]
+Event: 0.914 Thread 0x44631800 Exception <a 'java/lang/ArrayIndexOutOfBoundsException': 40> (0x03f9f4d8) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u101\7261\hotspot\src\share\vm\interpreter\interpreterRuntime.cpp, line 366]
+
+Events (10 events):
+Event: 1.082 Executing VM operation: GenCollectFull done
+Event: 1.109 Executing VM operation: GenCollectForAllocation
+Event: 1.117 Executing VM operation: GenCollectForAllocation done
+Event: 1.151 Executing VM operation: GenCollectForAllocation
+Event: 1.160 Executing VM operation: GenCollectForAllocation done
+Event: 1.184 Executing VM operation: GenCollectForAllocation
+Event: 1.195 Executing VM operation: GenCollectForAllocation done
+Event: 1.216 Executing VM operation: GenCollectForAllocation
+Event: 1.225 Executing VM operation: GenCollectForAllocation done
+Event: 1.249 Executing VM operation: GenCollectForAllocation
+
+
+Dynamic libraries:
+0x00820000 - 0x00853000 	C:\Program Files\Java\jdk1.8.0_101\bin\java.exe
+0x77610000 - 0x7774c000 	C:\Windows\SYSTEM32\ntdll.dll
+0x76310000 - 0x763e4000 	C:\Windows\system32\kernel32.dll
+0x75a10000 - 0x75a5a000 	C:\Windows\system32\KERNELBASE.dll
+0x75a60000 - 0x75b00000 	C:\Windows\system32\ADVAPI32.dll
+0x76730000 - 0x767dc000 	C:\Windows\system32\msvcrt.dll
+0x767e0000 - 0x767f9000 	C:\Windows\SYSTEM32\sechost.dll
+0x76500000 - 0x765a1000 	C:\Windows\system32\RPCRT4.dll
+0x77760000 - 0x77829000 	C:\Windows\system32\USER32.dll
+0x762c0000 - 0x7630e000 	C:\Windows\system32\GDI32.dll
+0x75dd0000 - 0x75dda000 	C:\Windows\system32\LPK.dll
+0x76110000 - 0x761ad000 	C:\Windows\system32\USP10.dll
+0x741d0000 - 0x7436e000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7600.16385_none_421189da2b7fabfc\COMCTL32.dll
+0x763f0000 - 0x76447000 	C:\Windows\system32\SHLWAPI.dll
+0x764e0000 - 0x764ff000 	C:\Windows\system32\IMM32.DLL
+0x75b00000 - 0x75bcc000 	C:\Windows\system32\MSCTF.dll
+0x52b10000 - 0x52bcf000 	C:\Program Files\Java\jdk1.8.0_101\jre\bin\msvcr100.dll
+0x52740000 - 0x52b0c000 	C:\Program Files\Java\jdk1.8.0_101\jre\bin\client\jvm.dll
+0x70d00000 - 0x70d07000 	C:\Windows\system32\WSOCK32.dll
+0x766f0000 - 0x76725000 	C:\Windows\system32\WS2_32.dll
+0x77750000 - 0x77756000 	C:\Windows\system32\NSI.dll
+0x70de0000 - 0x70e12000 	C:\Windows\system32\WINMM.dll
+0x74c60000 - 0x74c69000 	C:\Windows\system32\VERSION.dll
+0x77830000 - 0x77835000 	C:\Windows\system32\PSAPI.DLL
+0x60b30000 - 0x60b3c000 	C:\Program Files\Java\jdk1.8.0_101\jre\bin\verify.dll
+0x60b00000 - 0x60b21000 	C:\Program Files\Java\jdk1.8.0_101\jre\bin\java.dll
+0x60ae0000 - 0x60af3000 	C:\Program Files\Java\jdk1.8.0_101\jre\bin\zip.dll
+0x769c0000 - 0x77609000 	C:\Windows\system32\SHELL32.dll
+0x76800000 - 0x7695c000 	C:\Windows\system32\ole32.dll
+0x75760000 - 0x7576b000 	C:\Windows\system32\profapi.dll
+0x73430000 - 0x7351b000 	C:\Windows\system32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Djava.awt.headless=true -Xmx1024M -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant 
+java_command: com.android.dx.command.Main --dex --num-threads=4 --multi-dex --main-dex-list E:\SandeepProjectResources\MobipugNew\Mobipug27.10.18\MobipugSource\app\build\intermediates\multi-dex\debug\maindexlist.txt --output E:\SandeepProjectResources\MobipugNew\Mobipug27.10.18\MobipugSource\app\build\intermediates\transforms\dex\debug\folders\1000\1f\main E:\SandeepProjectResources\MobipugNew\Mobipug27.10.18\MobipugSource\app\build\intermediates\transforms\jarMerging\debug\jars\1\1f\combined.jar
+java_class_path (initial): C:\Users\android-4\AppData\Local\Android\Sdk\build-tools\26.0.2\lib\dx.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files\Skype\Phone\
+USERNAME=android-4
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 42 Stepping 7, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 Build 7600 (6.1.7600.16385)
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 42 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, clmul, ht, tsc, tscinvbit
+
+Memory: 4k page, physical 3578328k(1179360k free), swap 24056564k(19876972k free)
+
+vm_info: Java HotSpot(TM) Client VM (25.101-b13) for windows-x86 JRE (1.8.0_101-b13), built on Jun 22 2016 00:45:44 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Thu Nov 15 16:34:02 2018
+elapsed time: 1 seconds (0d 0h 0m 1s)
+

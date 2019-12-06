@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/dark_grey_clr"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+
+            <include
+                android:id="@+id/amount_edtx"
+                layout="@layout/custommultilineedittext"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/graybackground"
+
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/adprdctimage_tx"
+                    layout="@layout/customtextview"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:background="@color/gray4"/>
+                <include
+                    android:id="@+id/adprdctimgpick_tx"
+                    layout="@layout/customtextview"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:id="@+id/camera_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/lightgraybg"
+                        android:layout_marginRight="5dp"
+                        android:clickable="true"
+                        android:layout_weight="0.5">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="22dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="8dp"
+                            android:clickable="false"
+                            android:tint="@color/home_pg_clr1"
+                            android:src="@drawable/camera"/>
+                        <TextView
+                            android:id="@+id/camera_tx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+
+                            android:focusableInTouchMode="false"
+                            android:focusable="false"
+                            android:textColor="@color/home_pg_clr1"
+                            android:text="@string/camera"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/gallery_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="5dp"
+                        android:clickable="true"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/lightgraybg"
+                        android:layout_weight="0.5">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="22dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="8dp"
+                            android:clickable="false"
+                            android:tint="@color/home_pg_clr1"
+                            android:src="@drawable/gallery"/>
+
+                        <TextView
+                            android:id="@+id/gallery_tx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:focusableInTouchMode="false"
+                            android:focusable="false"
+                            android:textColor="@color/home_pg_clr1"
+                            android:text="@string/gallery"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageview_lay"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1.5dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/gray4"/>
+
+                    <ImageView
+                        android:id="@+id/billuploaded_img"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/imagenotfound"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <include
+                android:id="@+id/generatebill_btn"
+                layout="@layout/custombutton"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

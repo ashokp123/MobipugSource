@@ -1,0 +1,495 @@
+<resources>
+    <string name="app_name">Mobipug</string>
+    <string name="Google_API_KEY">AIzaSyAhZQInvzvpf__o3zK67tbJ9j7eZ1d7kys</string>
+
+    <string name="title1">Textview1</string>
+    <string name="title2">Textview2</string>
+    <string name="title3">Textview3</string>
+    <string name="title4">Button1</string>
+    <string name="title5">Button2</string>
+    <string name="title6">Button3</string>
+
+    <string name="text">text</string>
+    <string-array name="vendormenu_list">
+
+        <item>Home</item>
+        <item>Products</item>
+        <item>Offers</item>
+        <item>Categories</item>
+        <item>Sub Categories</item>
+        <item>Generate Bill</item>
+        <item>Contact Us</item>
+        <item>About Us</item>
+        <item>Privacy Policy</item>
+        <item>Privacy Policy</item>
+        <item>Log Out</item>
+
+    </string-array>
+
+    <array name="vendormenu_icons">
+
+        <item>@drawable/b_home</item>
+        <item>@drawable/m_testimonail</item>
+        <item>@drawable/m_testimonail</item>
+        <item>@drawable/m_testimonail</item>
+        <item>@drawable/m_testimonail</item>
+        <item>@drawable/m_testimonail</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+
+    </array>
+    <string-array name="customermenu_list">
+
+        <item>Home</item>
+        <item>Products</item>
+        <item>My Orders</item>
+        <item>Profile</item>
+        <item>Contact Us</item>
+        <item>About Us</item>
+        <item>Privacy Policy</item>
+        <item>Privacy Policy</item>
+        <item>Log Out</item>
+
+    </string-array>
+
+    <array name="customermenu_icons">
+
+        <item>@drawable/b_home</item>
+        <item>@drawable/m_testimonail</item>
+        <item>@drawable/m_testimonail</item>
+        <item>@drawable/m_myprofile</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+
+    </array>
+
+
+    //app
+    <string name="four">4.5</string>
+    <string name="arel">Aurelien Salomon</string>
+    <string name="arel_mail">\@aureliensalomon</string>
+
+    <string name="more_bnfits">More benefits please login</string>
+    <string name="search">Search...</string>
+    <string name="catgries">Categories</string>
+    <string name="products">Products</string>
+    <string name="show">Show more</string>
+    <string name="poplr_keywords">Popular keywords</string>
+
+    <string name="srtrs">Starters</string>
+    <string name="mng">Manage</string>
+    <string name="add">Add</string>
+    <string name="req">Request</string>
+
+    //Register
+    <string name="name">Name</string>
+    <string name="title">Title</string>
+    <string name="mobile">Mobile</string>
+    <string name="confrmpassword">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="custmr">Customer</string>
+    <string name="vendor">Vendor</string>
+    <string name="writeareview">Write your review here...</string>
+    <string name="cntinue">CONTINUE</string>
+    <string name="cnct_fb">Connect with facebook</string>
+    <string name="hve_acunt_rgstr">Have an account? Register</string>
+    <string name="trms_cndtns">By continuing, you agree to our\nTerms &amp; Conditions</string>
+    <string name="signin">SIGN IN</string>
+    <string name="signup">SIGN UP</string>
+    <string name="email">Email</string>
+    <string name="available">Available</string>
+    <string name="outofstock">Out of Stock</string>
+    <string name="paswrd">Password</string>
+    <string name="frgtpswd">FORGOT PASSWORD</string>
+    <string name="category_lst">Category List</string>
+    <string name="wishlist">Wish List</string>
+    <string name="mywishlist">My Wishlist</string>
+    <string name="subcategory_lst">Sub Category List</string>
+    <string name="manage_odr">MANAGE ORDER</string>
+    <string name="order_details">ORDER DETAILS</string>
+    <string name="profile">Profile</string>
+    <string name="ofrs_lst">Offers List</string>
+    <string name="offers">Offers</string>
+
+    <string name="ad_ofr">Add Offer</string>
+    <string name="manage">Manage</string>
+    <string name="srch_dots">Search...</string>
+    <string name="filtrs">Filters</string>
+
+    <string name="prmocde">Promocode :</string>
+    <string name="strtdate">Start Date :</string>
+    <string name="enddate">End Date :</string>
+    <string name="no">Order ID : </string>
+    <string name="seclt_catgry">Please Select Category</string>
+    <string name="seclt_name">Please Enter Name</string>
+    <string name="productrvw">Please Enter Review about product</string>
+    <string name="seclt_sub_catgry">Please Select Sub Category</string>
+    <string name="seclt_product">Please Select Product</string>
+    <string name="seclt_discounttype">Please Select Discount type</string>
+    <string name="seclt_ofrenddate">Please Select Offer End date</string>
+    <string name="seclt_ofrstartdate">Please Select Offer Start date</string>
+    <string name="seclt_oframount">Please Enter Offer amount</string>
+    <string name="secltsub_catgry">Select Sub Category</string>
+    <string name="srch_prdct">Search Product Name</string>
+    <string name="dscunt_type">Discount Type</string>
+    <string name="ofrstatus_type">Public/Private</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="disply_strtdate">10-10-2018</string>
+    <string name="disply_enddate">18-10-2018</string>
+    <string name="srch">Search</string>
+    <string name="sprtshoe">Sport shoes</string>
+    <string name="prce_dolars">$1,450.00</string>
+    <string name="dolars_rate">$999.00</string>
+    <string name="dscunt_ngtve">( -50% )</string>
+    <string name="ratng_cunt">( 40 )</string>
+
+    <string name="ofrtype">Offer Type</string>
+    <string name="publc">Public</string>
+    <string name="prvate">Private</string>
+
+    <string name="promo_code">Promo Code</string>
+    <string name="dscunt">Discount</string>
+    <string name="save">SAVE</string>
+    <string name="submit">Submit</string>
+    <string name="ofr_dscrptn">Offer Description</string>
+    <string name="ofr_dscrptnn"></string>
+
+    <string name="offer_list">Offers List</string>
+    <string name="add_offer">Add Offer</string>
+    <string name="edit_offer">Edit Offer</string>
+    <string name="manage_offer">Manage Offers</string>
+    <string name="bill_txtvw">Bill History</string>
+    <string name="bill_today_txtvw">TODAY</string>
+    <string name="bill_blood_txtvw">Blood Test</string>
+    <string name="bill_dt_mn_yr">July 18,2017 14:02 PM</string>
+    <string name="bill_prvs_txtvw">PREVIOUS LAB RESULTS</string>
+    <string name="bill_rcd">Add a lab result record</string>
+
+    //Products
+
+    <string name="manageproducts">Manage Products</string>
+    <string name="add_product">Add Product</string>
+    <string name="edit_product">Edit Product</string>
+    <string name="product_list">Products List</string>
+
+    //Add product
+    <string name="sel_category">Please Select Category</string>
+    <string name="nosubctgres">Sub Categories not available</string>
+    <string name="noproducts">Products not available</string>
+    <string name="sel_subcategory">Please Select Sub Category</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_descr">Product Description</string>
+    <string name="product_descrempty"></string>
+    <string name="product_details">Product Details</string>
+    <string name="product_imgs">Product Images</string>
+    <string name="billimage">Bill Image</string>
+    <string name="catimage">Category Image</string>
+    <string name="catsubcatimage">Category &amp; Sub Category Images</string>
+
+    <string name="product_pick">Pick From</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="stock">Stock</string>
+    <string name="amount">Amount</string>
+
+    <string name="pric">Price</string>
+    <string name="length">Select</string>
+    <string name="enterval">Enter Value</string>
+    <string name="inches">Unit</string>
+
+    <string name="ivokes">Ivolks Wireless Charger Cordless\nCellPhone Rapid Charger</string>
+    <string name="three_ten">$310.00</string>
+    <string name="nine_nine">$999.00</string>
+    <string name="fifty">( -50 )</string>
+    <string name="fourty">( 40 )</string>
+    <string name="addtocart">ADD TO CART</string>
+    <string name="prdct">Product details</string>
+    <string name="are">Are you tired of slow, inefficient charging with too many wires that get tangled with each other?</string>
+    <string name="if_u">If you are, we have just the solution for you!</string>
+    <string name="combng">Combining super-fasr charging and wireless</string>
+    <string name="vw_detls">VIEW DETAILS</string>
+    <string name="addrvw">Add Review</string>
+    <string name="ratinggiven">0 out of 5</string>
+    <string name="rvw_nd_cmnts">Reviews &amp; Comments</string>
+    <string name="three_zero">3.0 </string>
+    <string name="of_five">of 5 (250 reviews)</string>
+    <string name="ofr_details">Offer Details</string>
+    <string name="two_five">(250 reviews)</string>
+    <string name="five_s">5 stars</string>
+    <string name="four_s">4 stars</string>
+    <string name="three_s">3 stars</string>
+    <string name="two_s">2 stars</string>
+    <string name="one_s">1 stars</string>
+    <string name="rvws">Reviews</string>
+    <string name="cmnts">Comments</string>
+    <string name="seven_t">72</string>
+    <string name="three_f">34</string>
+    <string name="two_t">22</string>
+    <string name="one_o">11</string>
+    <string name="eight">08</string>
+
+    <string name="wrte_a">WRITE A REVIEW NOW</string>
+
+    <string name="gud_p">Good product, good cameras !</string>
+    <string name="fifteen_m">15 mins ago</string>
+    <string name="by_suuny">By Sunny Vo</string>
+    <string name="no_one">No-one gets iron - clad guarantee of success. Certainly, factors like opportunity, luck and timing are important, But the backbone
+                          of success is usually found in old - fashioned, basic concepts like hard work, determination, good planning and perseverance.</string>
+    <string name="see_all">SEE ALL REVIEWS</string>
+
+    //Bill generate
+    <string name="generate">Generate Bill</string>
+    <string name="enteramnt">Enter Amount</string>
+    <string name="uploadimage">Upload Image</string>
+    <string name="searchproduct">Search Product</string>
+    <string name="currentorders">Current Orders</string>
+    <string name="pastorders">Past Orders</string>
+    <string name="orders">Orders List</string>
+
+    <string name="scanqrcode">QRCode</string>
+    <string name="catgry">Category added successfully once approve\nyou can view in category list</string>
+    <string name="opps">Opps! Something went wrong please\ncontact admin through support</string>
+    <string name="deleteofrtxt">Do you want to delete this Offer?</string>
+    <string name="deleteproducttxt">Do you want to delete this Product?</string>
+    <string name="deletectgrytxt">Do you want to delete this Category?</string>
+    <string name="deletesubctgrytxt">Do you want to delete this Sub Category?</string>
+
+    <string name="deletedofrtxt">Selected Offer has been deleted successfully</string>
+    <string name="deletedproducttxt">Selected Product has been deleted successfully</string>
+    <string name="deletedctgrytxt">Selected Category has been deleted successfully</string>
+    <string name="deletedsubctgrytxt">Selected Sub Category has been deleted successfully</string>
+
+    <string name="activatectgrytxt">Do you want to Activate this Category?</string>
+    <string name="activatesubctgrytxt">Do you want to Activate this Sub Category?</string>
+    <string name="activateproducttxt">Do you want to Activate this Product?</string>
+    <string name="activateofrtxt">Do you want to Activate this Offer?</string>
+
+    <string name="confirmtxt">Do you want to Place this order?</string>
+
+
+    <string name="activatedctgrytxt">Selected Category has been Activated successfully.</string>
+    <string name="activatedsubctgrytxt">Selected Sub Category has been Activated successfully.</string>
+    <string name="activatedproducttxt">Selected Product has been Activated successfully.</string>
+    <string name="activatedofrtxt">Selected Offer has been Activated successfully.</string>
+
+    <string name="inactivatedctgrytxt">Selected Category has been Inactivated successfully.</string>
+    <string name="inactivatedsubctgrytxt">Selected Sub Category has been Inactivated successfully.</string>
+    <string name="inactivatedproducttxt">Selected Product has been Inactivated successfully.</string>
+    <string name="inactivatedofrtxt">Selected Offer has been Inactivated successfully.</string>
+    <string name="cncl">CANCEL</string>
+    <string name="ok">OK</string>
+
+    <string name="actve">Active</string>
+    <string name="inactve">In-Active</string>
+    <string name="delete">Delete</string>
+
+    //cart
+    <string name="mycart">My Cart</string>
+    <string name="revieworder">Review Order</string>
+    <string name="addedtocart">Already added to cart</string>
+    <string name="productunavlble">Selected Product is not available</string>
+    <string name="savendcontinue">SAVE &amp; CONTINUE</string>
+    <string name="proceedtopay">PROCEED TO PAY</string>
+    <string name="no_cartitemsfound">Oops your cart is empty</string>
+    <string name="noreviewsfound">No Reviews found</string>
+    <string name="prdct_ctgry">Product Category</string>
+    <string name="no_of">1</string>
+    <string name="price">Rs.123</string>
+    <string name="rv_ordr">Review Order</string>
+    <string name="day">WEDNESDAY, 15/04/18</string>
+    <string name="two_i">2 items</string>
+    <string name="dlvry_d">Delivery Date &amp; Time</string>
+    <string name="dlvry_dt">Delivery Date</string>
+    <string name="selct">SELECT</string>
+    <string name="dlvry_t">Delivery Time</string>
+    <string name="selct_t">SELECT TIME SLOT</string>
+    <string name="dlvry_adrs">Delivery Address</string>
+    <string name="block_c">Block C, Level 6.13A, Scott Garden ( Kompleks Rimbun Scott ),289 Kothapet, Hyderabad.</string>
+    <string name="add_addrss">ADD ADDRESS</string>
+
+    <string name="proceed">Proceed</string>
+    <string name="plus">+</string>
+    <string name="zero">0</string>
+    <string name="minus">-</string>
+    <string name="payment">Payment</string>
+    <string name="selctpaymnt">Select Payment Method</string>
+    <string name="crdtcard_online">Credit Card/ Online Transfer</string>
+    <string name="cash_on_delvry">Cash On Delivery</string>
+    <string name="entr_vuchr_cde"> Enter Voucher Code</string>
+    <string name="apply">APPLY</string>
+    <string name="redem_points"> Redeem With Points</string>
+    <string name="redeem">REDEEM</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="rm26">RM 26</string>
+    <string name="delverycharge">Delivery Charge</string>
+    <string name="free">FREE</string>
+    <string name="total">Total</string>
+    <string name="proced_to_pay">PROCEED TO PAY</string>
+
+    <string name="rset">RESET</string>
+    <string name="sort">Sort</string>
+    <string name="price_">Price</string>
+    <string name="offr">Offer</string>
+    <string name="ctgry">Category</string>
+    <string name="sub_ctgry">Sub - Category</string>
+    <string name="othr">Other</string>
+    <string name="prce_rnge">Price Range</string>
+    <string name="offr_rnge">Offer Range</string>
+
+    <string name="done">DONE</string>
+    <string name="reviews">Reviews</string>
+
+    <string name="my_categories">My Categories</string>
+    <string name="mngctgry">Manage Category</string>
+    <string name="addctgry">Request Category</string>
+
+    <string name="my_subcategories">My Sub Categories</string>
+    <string name="mngsubctgry">Manage Sub Category</string>
+    <string name="addsubctgry">Request Sub Category</string>
+    <string name="request">Request</string>
+
+    <string name="categoryname">Category Name</string>
+    <string name="subcategoryname">Sub Category Name</string>
+    <string name="setstatus">Set Status</string>
+
+    <string name="idproof_mndtry">ID Proof *</string>
+    <string name="adhaar_mndtry">Adhaar Card *</string>
+    <string name="pancard_mndtry">Pan Card *</string>
+    <string name="bnkdetails">Bank Details</string>
+    <string name="fullname_mndtry">FullName *</string>
+    <string name="accntNum_mndtry">Account Number *</string>
+    <string name="ifcs_code_mndtry">IFSC Code *</string>
+    <string name="packagetype">Package Type</string>
+    <string name="businessname">Business Name *</string>
+    <string name="businesspic">Business Image upload *</string>
+    <string name="businessbgpic">Business Background Image upload *</string>
+    <string name="categorytype">Select Category</string>
+    <string name="aboutus">About us</string>
+    <string name="aadhar_mndtry">Adhar No</string>
+
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="telephone">Telephone *</string>
+    <string name="fax">Fax *</string>
+    <string name="email_mndtry">Email *</string>
+    <string name="bussinessaddress">Business Address *</string>
+    <string name="mapaddress">Map Address</string>
+    <string name="pincode_mndtry">Pincode *</string>
+    <string name="website">Website</string>
+    <string name="submit_">SUBMIT</string>
+
+    <string name="order">Order</string>
+    <string name="ordernum">No.#1893</string>
+    <string name="orderdate">Oct 30,2018 2:00PM</string>
+    <string name="fee">FEE</string>
+    <string name="feeprce">$20.00</string>
+    <string name="vat_tax">VAT TAX</string>
+    <string name="vatprce">$450.00</string>
+    <string name="grnd_total">Grand total</string>
+    <string name="totalprce">$4572.02</string>
+    <string name="editprofile">Edit Profile</string>
+    <string name="changepswd">Change Password</string>
+    <string name="oldpswd">Old Password</string>
+    <string name="newpswd">New Password</string>
+    <string name="cnfmpswd">Confirm Password</string>
+
+    //validations
+    <string name="pleaseentername">Please enter Name</string>
+    <string name="pleaseenteremail">Please enter Email</string>
+    <string name="pleaseenterpw">Please enter Password</string>
+    <string name="pleaseentervalidpw">Password not matching</string>
+    <string name="pleaseentermobile">Please enter Mobile Number</string>
+    <string name="registersuccess">Registered Successfully</string>
+    <string name="forgotpw_emailsentmsg">Forgot Password request has been sent to your registered Email</string>
+    <string name="invalidemail">Invalid Email</string>
+    <string name="profileupdate_msg">Your profile details has been updated successfully.</string>
+    //feedback
+    <string name="sendfeedback">Send Feedback</string>
+    <string name="entermessage">Write your feedback here...</string>
+
+    <string name="takepic">Take Photo</string>
+    <string name="chsefromglry">Choose from Gallery</string>
+    <string name="cancel">Cancel</string>
+    <string name="select">Pick Image</string>
+
+    <string name="home">Home</string>
+    <string name="gnrt_bill">Generate Bill</string>
+    <string name="ctgryy">CATEGORY</string>
+    <string name="sub_ctgryy">SUB CATEGORY</string>
+    <string name="setttngs">Settings</string>
+    <string name="myorders">My Orders</string>
+
+    <string name="phnenumbr">1234567897</string>
+    <string name="bascinfrmatn">Basic Information</string>
+    <string name="busnesinfrmatn">Business Information</string>
+    <string name="acuntdetails">Account Details</string>
+    <string name="mailid">gggggggg@gmail.com</string>
+    <string name="faxnmbr">13235551234@efax</string>
+    <string name="acuntnumbr">123456789987654</string>
+    <string name="acuntifsc">HDFC0003456</string>
+    <string name="urlid">www.google.com</string>
+    <string name="logout_txt">Do you want to Logout ?</string>
+
+    <string name="pls_ntr_bsnesname">Please enter Business name</string>
+    <string name="pls_ntr_ctgry">Please enter category</string>
+    <string name="pls_ntr_sub_ctgry">Please enter Sub category</string>
+    <string name="pls_ntr_abt_us">Please enter about us</string>
+    <string name="invalidata">Entered Invalid data</string>
+    <string name="pls_ntr_fullname">Please enter full name</string>
+    <string name="pls_ntr_ac">please enter account number</string>
+    <string name="pls_ntr_ifsc_code">Please enter IFSC Number</string>
+    <string name="pls_ntr_adharno">Please enter Adhar No</string>
+    <string name="pls_ntr_pckg_type">Please Select Package Type</string>
+
+    <string name="pls_slct_adhaar">Please select adhaar card</string>
+    <string name="pls_slct_pancard">Please select pan card</string>
+    <string name="pls_slct_business_img">Please select business image</string>
+    <string name="pls_slct_business_bg_img">Please select business background image</string>
+
+    <string name="pls_ntr_lat">Please Enter latitude</string>
+    <string name="pls_ntr_lng">Please Enter Langitude</string>
+    <string name="pls_ntr_tel">Please Enter Telephone number</string>
+    <string name="pls_ntr_fax">Please Enter Fax Number</string>
+    <string name="pls_ntr_email">Please enter email</string>
+    <string name="pls_ntr_bsnss">Please enter business Type</string>
+    <string name="pls_ntr_map">Please enter Map address</string>
+    <string name="pls_ntr_pincode">Please enter pincode number</string>
+
+    <string name="pls_ntr_website">Please enter Website</string>
+
+    <string name="plsentercategory">Please enter Category Name</string>
+    <string name="plsentersubcategory">Please enter Sub Category Name</string>
+    <string name="addcategorymsg">New Category Request has been send to admin.</string>
+    <string name="addsubcategorymsg">New Sub Category Request has been send to admin.</string>
+    <string name="removefromwishlist">Selected Product has been removed from wishlist.</string>
+
+    <string name="enterproname">Please Enter Product Name</string>
+    <string name="enterprodescr">Please Enter Product Description</string>
+    <string name="orderplacedmsg">Your Order has been placed Successfully.</string>
+    <string name="ofradded">Offer successfully has been added to the selected Product.</string>
+
+    <string name="noofrsavailble">No Offers available</string>
+    <string name="srch_catgry">Search by Category</string>
+    <string name="srch_byproduct">Search</string>
+
+    <string name="enterbillamount">Please enter Bill Amount.</string>
+    <string name="uploadbillimage">Please upload Bill Image.</string>
+    <string name="uploadcatimage">Please upload Category Image.</string>
+    <string name="no_wishlistitemsfound">No Products added to Wishlist</string>
+    <string name="no_catgrsfound">No Categories found</string>
+    <string name="wishlist_msg">Successfully added to wishlist.</string>
+    <string name="remove_wishlist_msg">Successfully removed from the wishlist.</string>
+    <string name="productadded">Product has been Added successfully</string>
+
+    <string name="pls_ntr_oldpwd">Please enter old password</string>
+    <string name="pls_ntr_nwpwd">Please enter new password</string>
+    <string name="pls_ntr_cnfrmpwd">Please enter confirm password</string>
+    <string name="cnge_pwd_msg">Your password has been updated successfully</string>
+</resources>

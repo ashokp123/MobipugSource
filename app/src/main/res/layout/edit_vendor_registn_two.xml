@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.o3sa.mobipugapp.uicomponents.CircularImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/menu_profile"/>
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/camera"/>
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/edt_vreg_busnme_tx"
+                    layout="@layout/customtextview"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/shadowwithoutradius">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.87"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/m_myprofile"
+                            android:tint="@color/cam_txt_clt"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/dark_grey_clr"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.13">
+
+                        <include
+                            android:id="@+id/edt_vreg_busnme_edtx"
+                            layout="@layout/customedittextview" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/edt_vreg_bus_imgupld_tx"
+                    layout="@layout/customtextview"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/shadowwithoutradius">
+
+                    //businss_img_lay,businss_bg_img_lay;
+
+                    <LinearLayout
+                        android:id="@+id/businss_img_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="0.87"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="17dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/camera"
+                            android:tint="@color/cam_txt_clt"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/dark_grey_clr"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.13">
+
+                        <include
+                            android:id="@+id/edt_vreg_bus_imgupld_edtx"
+                            layout="@layout/customedittextview" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                //business_img,business_bg_img;
+
+                <ImageView
+                    android:id="@+id/business_img"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="gone"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"/>
+
+                <include
+                    android:id="@+id/edt_vreg_bus_bg_imgupld_tx"
+                    layout="@layout/customtextview"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/shadowwithoutradius">
+
+                    <LinearLayout
+                        android:id="@+id/businss_bg_img_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="0.87"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/camera"
+                            android:tint="@color/cam_txt_clt"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/dark_grey_clr"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.13">
+
+                        <include
+                            android:id="@+id/edt_vreg_bus_bg_imgupld_edtx"
+                            layout="@layout/customedittextview" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/business_bg_img"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="gone"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"/>
+
+                <include
+                    android:id="@+id/edt_vreg_slct_catgry_tx"
+                    layout="@layout/customtextview"/>
+
+                //vndr_ctgry_lay,vndr_sub_ctgry_lay;
+
+                <LinearLayout
+                    android:id="@+id/vndr_ctgry_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/shadowwithoutradius">
+
+                    <View
+                        android:layout_width="0.1dp"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        android:background="@color/dark_grey_clr"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.13">
+
+                        <include
+                            android:id="@+id/edt_vreg_slct_catgry_edtx"
+                            layout="@layout/customedittextview" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="0.87"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/vreg_pakgetype_imgg"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/dropdown_icon"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/edt_vreg_slct_subcatgry_tx"
+                    layout="@layout/customtextview"/>
+
+                <LinearLayout
+                    android:id="@+id/vndr_sub_ctgry_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/shadowwithoutradius">
+
+                    <View
+                        android:layout_width="0.1dp"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        android:background="@color/dark_grey_clr"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.13">
+
+                        <include
+                            android:id="@+id/edt_vreg_slct_subcatgry_edtx"
+                            layout="@layout/customedittextview" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="0.87"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/dropdown_icon"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/edt_vreg_abutus_tx"
+                    layout="@layout/customtextview"/>
+
+                    <include
+                        android:id="@+id/edt_vreg_abutus_edtx"
+                        layout="@layout/customedittextview" />
+
+                <include
+                    android:id="@+id/edt_vreg_cntnue_buttn"
+                    layout="@layout/custombutton"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

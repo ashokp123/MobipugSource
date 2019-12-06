@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/shadoweffect"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.15"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/vreg_idprf_edtx"
+                        layout="@layout/customedittextview"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.85"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/vreg_idprf_img"
+                        layout="@layout/customimageview"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/shadoweffect"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.15"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/vreg_pancrd_edtx"
+                        layout="@layout/customedittextview"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.85"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/vreg_pancrd_img"
+                        layout="@layout/customimageview"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <include
+                android:id="@+id/vreg_bnkdetls_txt"
+                layout="@layout/customtextview"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/shadoweffect"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.15"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/vreg_fulnme_edtx"
+                        layout="@layout/customedittextview"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.85"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/vreg_fulnme_img"
+                        layout="@layout/customimageview"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/shadoweffect"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.15"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/vreg_acntnmbr_edtx"
+                        layout="@layout/customedittextview"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.85"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/vreg_acntnmbr_img"
+                        layout="@layout/customimageview"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/shadoweffect"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.15"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/vreg_ifsc_edtx"
+                        layout="@layout/customedittextview"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.85"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/vreg_ifsc_img"
+                        layout="@layout/customimageview"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/shadoweffect"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.15"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/vreg_pakgetype_edtx"
+                        layout="@layout/customedittextview"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.85"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/vreg_pakgetype_img"
+                        layout="@layout/customimageview"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <include
+                android:id="@+id/vreg_cntnue_btn"
+                layout="@layout/custombutton"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

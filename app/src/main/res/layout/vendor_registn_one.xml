@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                        <com.o3sa.mobipugapp.customfonts.CustomEditText
+                            android:id="@+id/vreg_idprf_edtxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="15dp"
+                            android:layout_weight="0.12"
+                            android:background="@null"
+                            android:singleLine="true"
+                            android:editable="false"
+                            android:paddingTop="10dp"
+                            android:hint="@string/idproof_mndtry"
+                            android:enabled="false"
+                            android:textColorHint="@color/dark_grey_clr"
+                            android:textColor="@color/black"/>
+
+                       <!-- <include
+                            android:id="@+id/vreg_idprf_edtx"
+                            layout="@layout/customedittextview"/>-->
+
+
+                <LinearLayout
+                    android:id="@+id/vreg_idprf_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="0.88"
+                    android:gravity="bottom|center"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/vreg_idprf_imgg"
+                        layout="@layout/customimageview"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/ash_thik"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <com.o3sa.mobipugapp.customfonts.CustomEditText
+                    android:id="@+id/vreg_pancrd_edtxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:layout_weight="0.12"
+                    android:paddingTop="10dp"
+                    android:enabled="false"
+                    android:editable="false"
+                    android:hint="@string/pancard_mndtry"
+                    android:textSize="15dp"
+                    android:textColorHint="@color/dark_grey_clr"
+                    android:textColor="@color/black"/>
+
+                <!-- <include
+                     android:id="@+id/vreg_pancrd_edtx"
+                     layout="@layout/customedittextview"/>-->
+
+                <LinearLayout
+                    android:id="@+id/vreg_pancrd_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="0.88"
+                    android:gravity="bottom|center"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/vreg_pancrd_imgg"
+                        layout="@layout/customimageview"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/ash_thik"/>
+
+
+            <include
+                android:id="@+id/vreg_bnkdetls_txtt"
+                layout="@layout/customtextview"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/vreg_fulnme_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.12">
+
+                    <com.o3sa.mobipugapp.customfonts.CustomEditText
+                        android:id="@+id/vreg_fulnme_edtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:textSize="15dp"
+                        android:paddingTop="10dp"
+                        android:layout_gravity="center"
+                        android:singleLine="true"
+                        android:hint="@string/fullname_mndtry"
+                        android:textColorHint="@color/dark_grey_clr"
+                        android:textColor="@color/black"
+                        />
+
+                    <!-- <include
+                         android:id="@+id/vreg_pancrd_edtx"
+                         layout="@layout/customedittextview"/>-->
+
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="0.88"
+                    android:visibility="gone"
+                    android:gravity="bottom|center"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/vreg_fulnme_imgg"
+                        layout="@layout/customimageview"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/ash_thik"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/vreg_acntnmbr_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.15">
+
+                    <com.o3sa.mobipugapp.customfonts.CustomEditText
+                        android:id="@+id/vreg_acntnmbr_edtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:paddingTop="10dp"
+                        android:layout_gravity="center"
+                        android:textSize="15dp"
+                        android:singleLine="true"
+                        android:hint="@string/accntNum_mndtry"
+                        android:inputType="number"
+                        android:textColorHint="@color/dark_grey_clr"
+                        android:textColor="@color/black"/>
+
+                    <!-- <include
+                         android:id="@+id/vreg_pancrd_edtx"
+                         layout="@layout/customedittextview"/>-->
+
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="0.85"
+                    android:visibility="gone"
+
+                    android:gravity="bottom|center"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/vreg_acntnmbr_imgg"
+                        layout="@layout/customimageview"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/ash_thik"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/vreg_ifsc_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.15">
+
+                    <com.o3sa.mobipugapp.customfonts.CustomEditText
+                        android:id="@+id/vreg_ifsc_edtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:paddingTop="10dp"
+                        android:layout_gravity="center"
+                        android:textSize="15dp"
+                        android:singleLine="true"
+                        android:hint="@string/ifcs_code_mndtry"
+                        android:textColorHint="@color/dark_grey_clr"
+                        android:textColor="@color/black"/>
+
+                    <!-- <include
+                         android:id="@+id/vreg_pancrd_edtx"
+                         layout="@layout/customedittextview"/>-->
+
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="0.85"
+                    android:visibility="gone"
+
+                    android:gravity="bottom|center"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/vreg_ifsc_imgg"
+                        layout="@layout/customimageview"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/ash_thik"/>
+
+            <LinearLayout
+                android:id="@+id/vreg_pakgetype_layy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/vreg_pakgetype_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.12">
+
+                    <com.o3sa.mobipugapp.customfonts.CustomEditText
+                        android:id="@+id/vreg_pakgetype_edtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:layout_gravity="center"
+                        android:textSize="15dp"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:editable="false"
+                        android:singleLine="true"
+                        android:hint="@string/packagetype"
+                        android:textColorHint="@color/dark_grey_clr"
+                        android:textColor="@color/black"/>
+
+                    <!-- <include
+                         android:id="@+id/vreg_pancrd_edtx"
+                         layout="@layout/customedittextview"/>-->
+
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="0.88"
+                    android:gravity="bottom|center"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/vreg_pakgetype_imgg"
+                        layout="@layout/customimageview"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/ash_thik"/>
+
+            <include
+                android:id="@+id/vreg_cntnue_butnn"
+                layout="@layout/custombutton"/>
+
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

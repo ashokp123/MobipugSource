@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/bill_hstry_txtvw"
+            layout="@layout/customtextview"/>
+
+        <include
+            android:id="@+id/bill_today_txtvw"
+            layout="@layout/customtextview"/>
+
+        <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:background="@color/white">
+
+            <include
+                android:id="@+id/bill_recyler_one"
+                layout="@layout/customrecyleview" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/bill_pervious_txtvw"
+            layout="@layout/customtextview"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginBottom="40dp">
+
+            <include
+                android:id="@+id/bill_recyler_two"
+                layout="@layout/customrecyleview" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/light_ash">
+
+        <include
+            android:id="@+id/bill_lab_rcord_txtvw"
+            layout="@layout/customtextview"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:background="@drawable/bill_camers_bckgrd"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp">
+
+                <include
+                    android:id="@+id/bill_img_one"
+                    layout="@layout/customimageview"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:background="@drawable/bill_camers_bckgrd"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp">
+
+                <include
+                    android:id="@+id/bill_img_two"
+                    layout="@layout/customimageview"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/offers_bglay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ofrs_brnd_img"
+                android:layout_height="110dp"
+                android:layout_width="110dp"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:src="@drawable/imagenotfound"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.3">
+
+                    <include
+                        android:id="@+id/ofrs_brnd_tx"
+                        layout="@layout/customtextview" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="3dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="right">
+
+                            <include
+                                android:id="@+id/ofrs_prmocde_tx"
+                                android:visibility="gone"
+                                layout="@layout/customtextview"/>
+                            <include
+                                android:id="@+id/ofrs_strtdte_tx"
+                                layout="@layout/customtextview" />
+                            <include
+                                android:id="@+id/ofrs_endate_tx"
+                                layout="@layout/customtextview" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="left"
+                            android:layout_marginLeft="3dp">
+
+                            <include
+                                android:id="@+id/ofrs_prmocde1_tx"
+                                android:visibility="gone"
+                                layout="@layout/customtextview" />
+                            <include
+                                android:id="@+id/ofrs_strtdte1_tx"
+                                layout="@layout/customtextview" />
+                            <include
+                                android:id="@+id/ofrs_endate1_tx"
+                                layout="@layout/customtextview" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <include
+                        android:id="@+id/ofrs_discnt_tx"
+                        layout="@layout/customtextview" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="invisible"
+                    android:layout_weight="0.7">
+
+                    <LinearLayout
+                        android:id="@+id/ofers_mange_lay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ofrs_mang_bg"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                        <include
+                            android:id="@+id/ofrs_mange_img"
+                            layout="@layout/customimageview" />
+                        </LinearLayout>
+
+                        <include
+                            android:id="@+id/ofrs_mange_tx"
+                            layout="@layout/customtextview" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

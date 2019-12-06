@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/nrml_grey">
+
+        <include
+            android:id="@+id/landg_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/customviewpager"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="0.18"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom|center">
+
+                    <include
+                        android:id="@+id/lndg_more_bnfits_txt"
+                        layout="@layout/customtextview" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="0.4"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/viewPagerCountDots"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="bottom|center"
+                        android:visibility="visible"
+                        android:gravity="bottom|center"></LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="0.3">
+
+                    <include
+                        android:id="@+id/lndg_ctnue_btn"
+                        layout="@layout/custombutton"/>
+
+                    <include
+                        android:id="@+id/lndg_fb_btn"
+                        layout="@layout/custombutton"/>
+
+                    <include
+                        android:id="@+id/lndg_hve_acunt_tx"
+                        layout="@layout/customtextview" />
+
+                    <include
+                        android:id="@+id/lndg_trmcndtn_tx"
+                        layout="@layout/customtextview" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
